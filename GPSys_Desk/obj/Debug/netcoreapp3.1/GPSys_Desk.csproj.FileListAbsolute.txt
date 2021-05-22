@@ -1,0 +1,16 @@
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.csprojAssemblyReference.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.csproj.GenerateResource.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.AssemblyInfoInputs.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.AssemblyInfo.cs
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.csproj.CoreCompileInputs.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\bin\Debug\netcoreapp3.1\GPSys_Desk.exe
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\bin\Debug\netcoreapp3.1\GPSys_Desk.deps.json
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\bin\Debug\netcoreapp3.1\GPSys_Desk.runtimeconfig.json
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\bin\Debug\netcoreapp3.1\GPSys_Desk.runtimeconfig.dev.json
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\bin\Debug\netcoreapp3.1\GPSys_Desk.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\bin\Debug\netcoreapp3.1\GPSys_Desk.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.genruntimeconfig.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.Properties.Resources.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.LoginForm.resources
