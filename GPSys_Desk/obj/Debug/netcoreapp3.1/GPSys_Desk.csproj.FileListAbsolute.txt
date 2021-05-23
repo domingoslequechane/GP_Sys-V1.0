@@ -14,3 +14,7 @@ D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.genruntimeconfig.cache
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.Properties.Resources.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.LoginForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.PassRecForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.View.RecCodErrorForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.View.NewPassForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.View.ConfirmedNewPassForm.resources

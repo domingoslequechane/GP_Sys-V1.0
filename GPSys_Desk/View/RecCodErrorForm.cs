@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GPSys_Desk
+namespace GPSys_Desk.View
 {
-    public partial class LoginForm : Form
+    public partial class RecCodErrorForm : Form
     {
-        public LoginForm()
+        public RecCodErrorForm()
         {
             InitializeComponent();
+        }
+
+        private void btn_Ok_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

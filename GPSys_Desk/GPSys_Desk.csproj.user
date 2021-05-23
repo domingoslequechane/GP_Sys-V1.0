@@ -4,7 +4,19 @@
     <Compile Update="Controls\Button.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="View\ConfirmedNewPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\NewPassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\PassRecForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\RecCodErrorForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
