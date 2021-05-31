@@ -27,7 +27,7 @@ namespace GPSys_Desk.View
 
         private void Workspace(object obj)
         {
-            Application.Run(new WorkspaceForm());
+            
         }
     }
 }

@@ -39,4 +39,3 @@ D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Des
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.pdb
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.genruntimeconfig.cache
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.View.PrincipalForm.resources
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk\obj\Debug\netcoreapp3.1\GPSys_Desk.View.WorkspaceForm.resources
