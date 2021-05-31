@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using GPSys_Desk.View;
 
 namespace GPSys_Desk
 {
@@ -43,6 +44,27 @@ namespace GPSys_Desk
         private void novoFormulario(object obj)
         {
             Application.Run(new PassRecForm());
+        }
+
+        private void btn_Entrar_Click(object sender, EventArgs e)
+        {
+            // Validação de Campos
+            if (textBox_User.Text == "User")
+            {
+                this.Close();
+                newForm = new Thread(HomeForm);
+                newForm.SetApartmentState(ApartmentState.STA);
+                newForm.Start();
+            }
+            else
+            {
+                label_IncoerenciaInfo1.Text = "Usuário ou senha invalido (a).";
+            }
+        }
+
+        private void HomeForm(object obj)
+        {
+            Application.Run(new PrincipalForm());
         }
     }
 }

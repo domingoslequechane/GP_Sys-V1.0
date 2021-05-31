@@ -13,6 +13,7 @@ namespace GPSys_Desk
     {
         Thread newFormError;
         Thread newFormAccept;
+        Thread backForm;
 
         public PassRecForm()
         {
@@ -51,6 +52,19 @@ namespace GPSys_Desk
         private void novoFormularioAccept(object obj)
         {
             Application.Run(new View.NewPassForm());
+        }
+
+        private void link_goToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            backForm = new Thread(goToLogin);
+            backForm.SetApartmentState(ApartmentState.STA);
+            backForm.Start();
+        }
+
+        private void goToLogin(object obj)
+        {
+            Application.Run(new LoginForm());
         }
     }
 }

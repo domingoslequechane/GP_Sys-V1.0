@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LEQ\\+Workspace\\Code\\Gomes Publicidade\\System\\GPSys_Desk\\GPSys_Desk\\GPSys_Desk.csproj",
+      "projectUniqueName": "D:\\LEQ\\+Workspace\\Code\\Gomes Publicidade\\System\\GPSys_Desk\\GP_Sys-V1.0\\GPSys_Desk\\GPSys_Desk.csproj",
       "projectName": "GPSys_Desk",
-      "projectPath": "D:\\LEQ\\+Workspace\\Code\\Gomes Publicidade\\System\\GPSys_Desk\\GPSys_Desk\\GPSys_Desk.csproj",
+      "projectPath": "D:\\LEQ\\+Workspace\\Code\\Gomes Publicidade\\System\\GPSys_Desk\\GP_Sys-V1.0\\GPSys_Desk\\GPSys_Desk.csproj",
       "packagesPath": "C:\\Users\\Domingos Lequechane\\.nuget\\packages\\",
-      "outputPath": "D:\\LEQ\\+Workspace\\Code\\Gomes Publicidade\\System\\GPSys_Desk\\GPSys_Desk\\obj\\",
+      "outputPath": "D:\\LEQ\\+Workspace\\Code\\Gomes Publicidade\\System\\GPSys_Desk\\GP_Sys-V1.0\\GPSys_Desk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Domingos Lequechane\\AppData\\Roaming\\NuGet\\NuGet.Config",

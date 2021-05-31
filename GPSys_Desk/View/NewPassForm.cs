@@ -12,6 +12,7 @@ namespace GPSys_Desk.View
     public partial class NewPassForm : Form
     {
         Thread newForm;
+        Thread backForm;
 
         public NewPassForm()
         {
@@ -37,6 +38,32 @@ namespace GPSys_Desk.View
         private void novoFormulario(object obj)
         {
             Application.Run(new ConfirmedNewPassForm());
+        }
+
+        private void goToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            backForm = new Thread(voltarLogin);
+            backForm.SetApartmentState(ApartmentState.STA);
+            backForm.Start();
+        }
+
+        private void voltarLogin(object obj)
+        {
+            Application.Run(new LoginForm());
+        }
+
+        private void link_GoToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+            backForm = new Thread(goToLogin);
+            backForm.SetApartmentState(ApartmentState.STA);
+            backForm.Start();
+        }
+
+        private void goToLogin(object obj)
+        {
+            Application.Run(new LoginForm());
         }
     }
 }
