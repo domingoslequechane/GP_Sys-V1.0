@@ -11,7 +11,7 @@ namespace GPSys_Desk.View
 {
     public partial class RecCodErrorForm : Form
     {
-        Thread backForm;
+        Thread goToLoginForm;
 
         public RecCodErrorForm()
         {
@@ -26,9 +26,9 @@ namespace GPSys_Desk.View
         private void link_GoToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
-            backForm = new Thread(goToLogin);
-            backForm.SetApartmentState(ApartmentState.STA);
-            backForm.Start();
+            goToLoginForm = new Thread(goToLogin);
+            goToLoginForm.SetApartmentState(ApartmentState.STA);
+            goToLoginForm.Start();
         }
 
         private void goToLogin(object obj)

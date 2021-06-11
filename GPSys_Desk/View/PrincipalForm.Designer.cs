@@ -58,6 +58,7 @@ namespace GPSys_Desk.View
             this.comboBox_Category = new System.Windows.Forms.ComboBox();
             this.btn_Clear = new GPSys_Desk.Controls.Buttons();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,6 +67,7 @@ namespace GPSys_Desk.View
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -195,7 +197,7 @@ namespace GPSys_Desk.View
             // link_Sair
             // 
             this.link_Sair.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.link_Sair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.link_Sair.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.link_Sair.AutoSize = true;
             this.link_Sair.BackColor = System.Drawing.Color.Transparent;
             this.link_Sair.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -211,10 +213,11 @@ namespace GPSys_Desk.View
             this.link_Sair.Text = "Sair";
             this.link_Sair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.link_Sair.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.link_Sair.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Sair_LinkClicked);
             // 
             // btn_Sair
             // 
-            this.btn_Sair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Sair.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Sair.BackColor = System.Drawing.Color.Transparent;
             this.btn_Sair.BackgroundColor = System.Drawing.Color.Transparent;
             this.btn_Sair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Sair.BackgroundImage")));
@@ -235,10 +238,11 @@ namespace GPSys_Desk.View
             this.btn_Sair.TabStop = false;
             this.btn_Sair.TextColor = System.Drawing.Color.White;
             this.btn_Sair.UseVisualStyleBackColor = false;
+            this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
             // 
             // btn_Sair2
             // 
-            this.btn_Sair2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_Sair2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Sair2.BackColor = System.Drawing.Color.Transparent;
             this.btn_Sair2.BackgroundColor = System.Drawing.Color.Transparent;
             this.btn_Sair2.BorderColor = System.Drawing.Color.Transparent;
@@ -257,6 +261,7 @@ namespace GPSys_Desk.View
             this.btn_Sair2.TabStop = false;
             this.btn_Sair2.TextColor = System.Drawing.Color.White;
             this.btn_Sair2.UseVisualStyleBackColor = false;
+            this.btn_Sair2.Click += new System.EventHandler(this.btn_Sair2_Click);
             // 
             // btn_Calendario
             // 
@@ -430,7 +435,7 @@ namespace GPSys_Desk.View
             // 
             this.textBox_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Search.Font = new System.Drawing.Font("Gotham", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_Search.Location = new System.Drawing.Point(313, 143);
+            this.textBox_Search.Location = new System.Drawing.Point(112, 3);
             this.textBox_Search.Name = "textBox_Search";
             this.textBox_Search.PlaceholderText = "Buscar por...";
             this.textBox_Search.Size = new System.Drawing.Size(378, 30);
@@ -450,7 +455,7 @@ namespace GPSys_Desk.View
             this.btn_Search.FlatAppearance.BorderSize = 0;
             this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Search.ForeColor = System.Drawing.Color.White;
-            this.btn_Search.Location = new System.Drawing.Point(692, 143);
+            this.btn_Search.Location = new System.Drawing.Point(490, 3);
             this.btn_Search.Name = "btn_Search";
             this.btn_Search.Size = new System.Drawing.Size(30, 30);
             this.btn_Search.TabIndex = 4;
@@ -471,7 +476,7 @@ namespace GPSys_Desk.View
             "Todos",
             "Órdens",
             "Clientes"});
-            this.comboBox_Category.Location = new System.Drawing.Point(207, 143);
+            this.comboBox_Category.Location = new System.Drawing.Point(3, 3);
             this.comboBox_Category.Name = "comboBox_Category";
             this.comboBox_Category.Size = new System.Drawing.Size(107, 31);
             this.comboBox_Category.TabIndex = 0;
@@ -490,12 +495,13 @@ namespace GPSys_Desk.View
             this.btn_Clear.FlatAppearance.BorderSize = 0;
             this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Clear.ForeColor = System.Drawing.Color.White;
-            this.btn_Clear.Location = new System.Drawing.Point(668, 149);
+            this.btn_Clear.Location = new System.Drawing.Point(466, 9);
             this.btn_Clear.Name = "btn_Clear";
             this.btn_Clear.Size = new System.Drawing.Size(18, 18);
             this.btn_Clear.TabIndex = 2;
             this.btn_Clear.TextColor = System.Drawing.Color.White;
             this.btn_Clear.UseVisualStyleBackColor = false;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // panel9
             // 
@@ -508,19 +514,27 @@ namespace GPSys_Desk.View
             this.panel9.Size = new System.Drawing.Size(108, 142);
             this.panel9.TabIndex = 0;
             // 
+            // panel10
+            // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel10.Controls.Add(this.btn_Clear);
+            this.panel10.Controls.Add(this.comboBox_Category);
+            this.panel10.Controls.Add(this.btn_Search);
+            this.panel10.Controls.Add(this.textBox_Search);
+            this.panel10.Location = new System.Drawing.Point(205, 98);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(523, 36);
+            this.panel10.TabIndex = 16;
+            // 
             // PrincipalForm
             // 
-            this.AcceptButton = this.btn_Search;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(934, 511);
-            this.Controls.Add(this.btn_Clear);
-            this.Controls.Add(this.comboBox_Category);
-            this.Controls.Add(this.btn_Search);
-            this.Controls.Add(this.textBox_Search);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
@@ -532,8 +546,9 @@ namespace GPSys_Desk.View
             this.MinimumSize = new System.Drawing.Size(950, 550);
             this.Name = "PrincipalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GP Sys";
+            this.Text = "GP System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PrincipalForm_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -548,8 +563,9 @@ namespace GPSys_Desk.View
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -583,5 +599,6 @@ namespace GPSys_Desk.View
         private System.Windows.Forms.ComboBox comboBox_Category;
         private Controls.Buttons btn_Clear;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
     }
 }

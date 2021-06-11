@@ -11,59 +11,54 @@ namespace GPSys_Desk.View
 {
     public partial class NewPassForm : Form
     {
-        Thread newForm;
-        Thread backForm;
+        Thread goToConfirmationForm;
+        Thread goToLoginForm;
 
         public NewPassForm()
         {
             InitializeComponent();
+            textBox_NewPass1.UseSystemPasswordChar = true;
+            textBox_NewPass2.UseSystemPasswordChar = true;
         }
 
         private void btn_Actualizar_Click(object sender, EventArgs e)
         {
-            if (textBox_NewPass1.Text == textBox_NewPass2.Text)
-            {
-                this.Close();
-                newForm = new Thread(novoFormulario);
-                newForm.SetApartmentState(ApartmentState.STA);
-                newForm.Start();
-            }
-            else
-            {
-                label_IncoerenciaInfo1.Text = "Incoeréncia!";
-                label_IncoerenciaInfo2.Text = "As duas senhas tem de ser iguais";
-            }
+            this.Close();
+            goToConfirmationForm = new Thread(goConfirmationForm);
+            goToConfirmationForm.SetApartmentState(ApartmentState.STA);
+            goToConfirmationForm.Start();
         }
 
-        private void novoFormulario(object obj)
+        private void goConfirmationForm(object obj)
         {
             Application.Run(new ConfirmedNewPassForm());
-        }
-
-        private void goToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
-            backForm = new Thread(voltarLogin);
-            backForm.SetApartmentState(ApartmentState.STA);
-            backForm.Start();
-        }
-
-        private void voltarLogin(object obj)
-        {
-            Application.Run(new LoginForm());
         }
 
         private void link_GoToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
-            backForm = new Thread(goToLogin);
-            backForm.SetApartmentState(ApartmentState.STA);
-            backForm.Start();
+            goToLoginForm = new Thread(goToLogin);
+            goToLoginForm.SetApartmentState(ApartmentState.STA);
+            goToLoginForm.Start();
         }
 
         private void goToLogin(object obj)
         {
             Application.Run(new LoginForm());
+        }
+
+        private void checkBox_Show_Pass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_Show_Pass.Checked)
+            {
+                textBox_NewPass1.UseSystemPasswordChar = false;
+                textBox_NewPass2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox_NewPass1.UseSystemPasswordChar = true;
+                textBox_NewPass2.UseSystemPasswordChar = true;
+            }
         }
     }
 }

@@ -46,10 +46,11 @@ namespace GPSys_Desk.View
             // 
             // label_Info2
             // 
+            this.label_Info2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label_Info2.AutoSize = true;
             this.label_Info2.BackColor = System.Drawing.Color.Transparent;
             this.label_Info2.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Info2.Location = new System.Drawing.Point(115, 281);
+            this.label_Info2.Location = new System.Drawing.Point(116, 274);
             this.label_Info2.Name = "label_Info2";
             this.label_Info2.Size = new System.Drawing.Size(73, 19);
             this.label_Info2.TabIndex = 28;
@@ -61,7 +62,7 @@ namespace GPSys_Desk.View
             this.label_Info1.AutoSize = true;
             this.label_Info1.BackColor = System.Drawing.Color.Transparent;
             this.label_Info1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label_Info1.Location = new System.Drawing.Point(56, 257);
+            this.label_Info1.Location = new System.Drawing.Point(57, 250);
             this.label_Info1.Name = "label_Info1";
             this.label_Info1.Size = new System.Drawing.Size(190, 19);
             this.label_Info1.TabIndex = 30;
@@ -74,16 +75,16 @@ namespace GPSys_Desk.View
             this.Logo_panel.BackColor = System.Drawing.Color.Transparent;
             this.Logo_panel.Controls.Add(this.pictureBox1);
             this.Logo_panel.Controls.Add(this.pictureBox2);
-            this.Logo_panel.Location = new System.Drawing.Point(70, 71);
+            this.Logo_panel.Location = new System.Drawing.Point(71, 69);
             this.Logo_panel.Name = "Logo_panel";
-            this.Logo_panel.Size = new System.Drawing.Size(162, 53);
+            this.Logo_panel.Size = new System.Drawing.Size(162, 55);
             this.Logo_panel.TabIndex = 27;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(108, 36);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,7 +95,7 @@ namespace GPSys_Desk.View
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(110, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(110, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(50, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,9 +104,10 @@ namespace GPSys_Desk.View
             // 
             // pictureBox_Error
             // 
+            this.pictureBox_Error.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_Error.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_Error.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Error.Image")));
-            this.pictureBox_Error.Location = new System.Drawing.Point(116, 179);
+            this.pictureBox_Error.Location = new System.Drawing.Point(117, 172);
             this.pictureBox_Error.Name = "pictureBox_Error";
             this.pictureBox_Error.Size = new System.Drawing.Size(71, 62);
             this.pictureBox_Error.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -114,6 +116,7 @@ namespace GPSys_Desk.View
             // 
             // btn_Login
             // 
+            this.btn_Login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
             this.btn_Login.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
             this.btn_Login.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -126,7 +129,7 @@ namespace GPSys_Desk.View
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(29, 361);
+            this.btn_Login.Location = new System.Drawing.Point(30, 352);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(244, 60);
             this.btn_Login.TabIndex = 31;
@@ -142,7 +145,7 @@ namespace GPSys_Desk.View
             this.label_RecuperarCodigo.BackColor = System.Drawing.Color.Transparent;
             this.label_RecuperarCodigo.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label_RecuperarCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.label_RecuperarCodigo.Location = new System.Drawing.Point(35, 31);
+            this.label_RecuperarCodigo.Location = new System.Drawing.Point(36, 29);
             this.label_RecuperarCodigo.Name = "label_RecuperarCodigo";
             this.label_RecuperarCodigo.Size = new System.Drawing.Size(232, 29);
             this.label_RecuperarCodigo.TabIndex = 26;
