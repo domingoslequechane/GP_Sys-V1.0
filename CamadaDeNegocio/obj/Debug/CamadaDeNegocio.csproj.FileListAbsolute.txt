@@ -1,0 +1,11 @@
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\bin\Debug\CamadaDeNegocio.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\bin\Debug\CamadaDeNegocio.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\bin\Debug\CamadaDeDados.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\bin\Debug\CamadaDeEntidades.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\bin\Debug\CamadaDeDados.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\bin\Debug\CamadaDeEntidades.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\obj\Debug\CamadaDeNegocio.csprojAssemblyReference.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\obj\Debug\CamadaDeNegocio.csproj.CoreCompileInputs.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\obj\Debug\CamadaDeNegocio.csproj.CopyComplete
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\obj\Debug\CamadaDeNegocio.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeNegocio\obj\Debug\CamadaDeNegocio.pdb

@@ -1,0 +1,9 @@
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\bin\Debug\CamadaDeDados.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\bin\Debug\CamadaDeDados.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\bin\Debug\CamadaDeEntidades.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\bin\Debug\CamadaDeEntidades.pdb
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\obj\Debug\CamadaDeDados.csprojAssemblyReference.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\obj\Debug\CamadaDeDados.csproj.CoreCompileInputs.cache
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\obj\Debug\CamadaDeDados.csproj.CopyComplete
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\obj\Debug\CamadaDeDados.dll
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeDados\obj\Debug\CamadaDeDados.pdb
