@@ -31,13 +31,13 @@ namespace GPSys_Desk_APP.Views
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientsUserControlForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ID = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Delete_btn = new GPSys_Desk_APP.Controls.Buttons();
             this.Edit_btn = new GPSys_Desk_APP.Controls.Buttons();
             this.Clear_btn = new GPSys_Desk_APP.Controls.Buttons();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.DataGridView = new System.Windows.Forms.DataGridView();
             this.TextBox_Search = new System.Windows.Forms.TextBox();
-            this.ID = new GPSys_Desk_APP.Controls.OnlyInt();
-            this.Delete_btn = new GPSys_Desk_APP.Controls.Buttons();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,40 @@ namespace GPSys_Desk_APP.Views
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1058, 618);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // ID
+            // 
+            this.ID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ID.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.Location = new System.Drawing.Point(868, 25);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(63, 28);
+            this.ID.TabIndex = 9;
+            this.ID.Text = "ID";
+            // 
+            // Delete_btn
+            // 
+            this.Delete_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Delete_btn.AutoSize = true;
+            this.Delete_btn.BackColor = System.Drawing.Color.Gray;
+            this.Delete_btn.BackgroundColor = System.Drawing.Color.Gray;
+            this.Delete_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_btn.BackgroundImage")));
+            this.Delete_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Delete_btn.BorderColor = System.Drawing.Color.Transparent;
+            this.Delete_btn.BorderRadius = 7;
+            this.Delete_btn.BorderSize = 0;
+            this.Delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Delete_btn.FlatAppearance.BorderSize = 0;
+            this.Delete_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_btn.ForeColor = System.Drawing.Color.White;
+            this.Delete_btn.Location = new System.Drawing.Point(941, 21);
+            this.Delete_btn.Name = "Delete_btn";
+            this.Delete_btn.Size = new System.Drawing.Size(37, 37);
+            this.Delete_btn.TabIndex = 8;
+            this.Delete_btn.TextColor = System.Drawing.Color.White;
+            this.Delete_btn.UseVisualStyleBackColor = false;
             // 
             // Edit_btn
             // 
@@ -84,6 +117,7 @@ namespace GPSys_Desk_APP.Views
             this.Edit_btn.TabStop = false;
             this.Edit_btn.TextColor = System.Drawing.Color.White;
             this.Edit_btn.UseVisualStyleBackColor = false;
+            this.Edit_btn.Click += new System.EventHandler(this.Edit_btn_Click);
             // 
             // Clear_btn
             // 
@@ -152,40 +186,6 @@ namespace GPSys_Desk_APP.Views
             this.TextBox_Search.TabIndex = 6;
             this.TextBox_Search.Text = "Buscar cliente...";
             this.TextBox_Search.TextChanged += new System.EventHandler(this.TextBox_Search_TextChanged);
-            // 
-            // ID
-            // 
-            this.ID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ID.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(868, 25);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(63, 28);
-            this.ID.TabIndex = 9;
-            this.ID.Text = "ID";
-            // 
-            // Delete_btn
-            // 
-            this.Delete_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Delete_btn.AutoSize = true;
-            this.Delete_btn.BackColor = System.Drawing.Color.Gray;
-            this.Delete_btn.BackgroundColor = System.Drawing.Color.Gray;
-            this.Delete_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_btn.BackgroundImage")));
-            this.Delete_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Delete_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Delete_btn.BorderRadius = 7;
-            this.Delete_btn.BorderSize = 0;
-            this.Delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Delete_btn.FlatAppearance.BorderSize = 0;
-            this.Delete_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_btn.ForeColor = System.Drawing.Color.White;
-            this.Delete_btn.Location = new System.Drawing.Point(941, 21);
-            this.Delete_btn.Name = "Delete_btn";
-            this.Delete_btn.Size = new System.Drawing.Size(37, 37);
-            this.Delete_btn.TabIndex = 8;
-            this.Delete_btn.TextColor = System.Drawing.Color.White;
-            this.Delete_btn.UseVisualStyleBackColor = false;
             // 
             // ClientsUserControlForm
             // 

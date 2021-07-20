@@ -3,4 +3,3 @@ D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeE
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeEntidades\obj\Debug\CamadaDeEntidades.csproj.CoreCompileInputs.cache
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeEntidades\obj\Debug\CamadaDeEntidades.dll
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeEntidades\obj\Debug\CamadaDeEntidades.pdb
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\CamadaDeEntidades\obj\Debug\CamadaDeEntidades.csprojAssemblyReference.cache

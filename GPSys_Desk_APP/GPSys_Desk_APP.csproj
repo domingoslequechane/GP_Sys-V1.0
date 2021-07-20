@@ -113,6 +113,12 @@
     <Compile Include="Views\PassRecForm.Designer.cs">
       <DependentUpon>PassRecForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\PriceUserControlForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PriceUserControlForm.Designer.cs">
+      <DependentUpon>PriceUserControlForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ProgressBar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="Views\CalendarUserControlForm.Designer.cs">
       <DependentUpon>CalendarUserControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceUserControlForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ServiceUserControlForm.Designer.cs">
+      <DependentUpon>ServiceUserControlForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\WorkspaceForm.cs">
       <SubType>Form</SubType>
@@ -166,6 +178,9 @@
     <EmbeddedResource Include="Views\PassRecForm.resx">
       <DependentUpon>PassRecForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\PriceUserControlForm.resx">
+      <DependentUpon>PriceUserControlForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ProgressBar.resx">
       <DependentUpon>ProgressBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CalendarUserControlForm.resx">
       <DependentUpon>CalendarUserControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ServiceUserControlForm.resx">
+      <DependentUpon>ServiceUserControlForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\WorkspaceForm.resx">
       <DependentUpon>WorkspaceForm.cs</DependentUpon>

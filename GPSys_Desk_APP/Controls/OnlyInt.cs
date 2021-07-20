@@ -39,7 +39,7 @@ namespace GPSys_Desk_APP.Controls
         {
             base.OnCreateControl();
 
-            this.TextAlign = HorizontalAlignment.Left;
+            this.TextAlign = HorizontalAlignment.Right;
         }
 
         protected override void OnKeyPress(KeyPressEventArgs e)

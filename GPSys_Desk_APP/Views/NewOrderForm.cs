@@ -20,23 +20,22 @@ namespace GPSys_Desk_APP.Views
         public NewOrderForm()
         {
             InitializeComponent();
-            TextBox_ClientName.Focus();
+
+            TB_ClientName.Focus();
+
+            CB_ClientCity.SelectedIndex = 0;
         }
 
         void manutencao(string action)
         {
-            objent.Nome_do_Cliente = TextBox_ClientName.Text;
-            objent.Nuit = TextBox_ClientNuitNumber.Text;
-            objent.Morada = TextBox_ClientAddress.Text;
-            objent.Cell = TextBox_ClientContactNumber.Text;
-            objent.Email = TextBox_ClientEmail.Text;
-            objent.Cidade = ComboBox_ClientCity.Text;
+            objent.Nome_do_Cliente = TB_ClientName.Text;
+            objent.Morada = TB_ClientAddress.Text;
+            objent.Cell = TB_ClientContactNumber.Text;
+            objent.Email = TB_ClientEmail.Text;
+            objent.Cidade = CB_ClientCity.Text;
 
-            objent.Data_entrada = DateTimePicker_In.Text;
-            objent.Cod_Serv = DateTimePicker_Out.Text;
-            objent.Quantidade = TextBox_Quantity.Text;
-            objent.Total_a_pagar = Label_UnpaidAmount.Text;
-            objent.Total_pago = TextBox_PaidAmount.Text;
+            objent.Data_entrada = DT_In.Text;
+            objent.Cod_Serv = DT_Out.Text;
             objent.Nota = TextBox_Note.Text;
             objent.Acao = action;
             String men = objneg.N_manutencao_clientes(objent);
@@ -45,18 +44,14 @@ namespace GPSys_Desk_APP.Views
 
         void limpar()
         {
-            TextBox_ClientName.Text = "";
-            TextBox_ClientNuitNumber.Text = "";
-            TextBox_ClientAddress.Text = "";
-            TextBox_ClientContactNumber.Text = "";
-            TextBox_ClientEmail.Text = "";
-            objent.Cidade = ComboBox_ClientCity.Text = "";
+            TB_ClientName.Text = "";
+            TB_ClientAddress.Text = "";
+            TB_ClientContactNumber.Text = "";
+            TB_ClientEmail.Text = "";
+            objent.Cidade = CB_ClientCity.Text = "";
 
-            DateTimePicker_In.Text = "";
-            DateTimePicker_Out.Text = "";
-            TextBox_Quantity.Text = "";
-            Label_UnpaidAmount.Text = "";
-            TextBox_PaidAmount.Text = "0000";
+            DT_In.Text = "";
+            DT_Out.Text = "";
             TextBox_Note.Text = "";
 
             DataGridView.DataSource = objneg.N_listar_pedidos();

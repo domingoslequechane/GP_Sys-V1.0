@@ -32,18 +32,6 @@ namespace GPSys_Desk_APP.Views
             TextBox_Search.Focus();
             TextBox_Search.SelectAll();
         }
-        private void Edit_btn_Click(object sender, EventArgs e)
-        {
-            editClient = new Thread(UpdateClient);
-            editClient.SetApartmentState(ApartmentState.STA);
-            editClient.Start();
-        }
-        private void UpdateClient(object obj)
-        {
-            Application.Run(new ClientsUpdateForm());
-        }
-
-
 
         void manutencao(String action)
         {
@@ -96,9 +84,15 @@ namespace GPSys_Desk_APP.Views
             //}
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Edit_btn_Click(object sender, EventArgs e)
         {
-
+            editClient = new Thread(UpdateClient);
+            editClient.SetApartmentState(ApartmentState.STA);
+            editClient.Start();
+        }
+        private void UpdateClient(object obj)
+        {
+            Application.Run(new ClientsUpdateForm());
         }
     }
 }
