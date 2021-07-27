@@ -33,11 +33,11 @@ namespace GPSys_Desk_APP.Views
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox_Error = new System.Windows.Forms.PictureBox();
             this.label_Login = new System.Windows.Forms.Label();
-            this.link_Login = new System.Windows.Forms.LinkLabel();
+            this.Link_Login = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_Exit = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_Exit = new GPSys_Desk_APP.Controls.Buttons();
             this.label1 = new System.Windows.Forms.Label();
             this.label_Info2 = new System.Windows.Forms.Label();
             this.label_Info1 = new System.Windows.Forms.Label();
@@ -54,9 +54,9 @@ namespace GPSys_Desk_APP.Views
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pictureBox_Error);
             this.panel1.Controls.Add(this.label_Login);
-            this.panel1.Controls.Add(this.link_Login);
+            this.panel1.Controls.Add(this.Link_Login);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btn_Exit);
+            this.panel1.Controls.Add(this.Btn_Exit);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label_Info2);
             this.panel1.Controls.Add(this.label_Info1);
@@ -89,22 +89,22 @@ namespace GPSys_Desk_APP.Views
             this.label_Login.TabIndex = 18;
             this.label_Login.Text = "Recuperar código";
             // 
-            // link_Login
+            // Link_Login
             // 
-            this.link_Login.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.link_Login.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.link_Login.AutoSize = true;
-            this.link_Login.BackColor = System.Drawing.Color.Transparent;
-            this.link_Login.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_Login.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.link_Login.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.link_Login.Location = new System.Drawing.Point(124, 409);
-            this.link_Login.Name = "link_Login";
-            this.link_Login.Size = new System.Drawing.Size(56, 19);
-            this.link_Login.TabIndex = 16;
-            this.link_Login.TabStop = true;
-            this.link_Login.Text = "Login";
-            this.link_Login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Login_LinkClicked);
+            this.Link_Login.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Link_Login.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Link_Login.AutoSize = true;
+            this.Link_Login.BackColor = System.Drawing.Color.Transparent;
+            this.Link_Login.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Link_Login.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.Link_Login.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Link_Login.Location = new System.Drawing.Point(124, 409);
+            this.Link_Login.Name = "Link_Login";
+            this.Link_Login.Size = new System.Drawing.Size(56, 19);
+            this.Link_Login.TabIndex = 2;
+            this.Link_Login.TabStop = true;
+            this.Link_Login.Text = "Login";
+            this.Link_Login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Link_Login_LinkClicked);
             // 
             // panel2
             // 
@@ -136,26 +136,26 @@ namespace GPSys_Desk_APP.Views
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // btn_Exit
+            // Btn_Exit
             // 
-            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.btn_Exit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.btn_Exit.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_Exit.BorderRadius = 15;
-            this.btn_Exit.BorderSize = 0;
-            this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Exit.FlatAppearance.BorderSize = 0;
-            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(36, 339);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(232, 61);
-            this.btn_Exit.TabIndex = 17;
-            this.btn_Exit.Text = "Fechar";
-            this.btn_Exit.TextColor = System.Drawing.Color.White;
-            this.btn_Exit.UseVisualStyleBackColor = false;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            this.Btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_Exit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_Exit.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_Exit.BorderRadius = 15;
+            this.Btn_Exit.BorderSize = 0;
+            this.Btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_Exit.FlatAppearance.BorderSize = 0;
+            this.Btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Exit.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.Btn_Exit.Location = new System.Drawing.Point(36, 339);
+            this.Btn_Exit.Name = "Btn_Exit";
+            this.Btn_Exit.Size = new System.Drawing.Size(232, 61);
+            this.Btn_Exit.TabIndex = 1;
+            this.Btn_Exit.Text = "Fechar";
+            this.Btn_Exit.TextColor = System.Drawing.Color.White;
+            this.Btn_Exit.UseVisualStyleBackColor = false;
+            this.Btn_Exit.Click += new System.EventHandler(this.Btn_Exit_Click);
             // 
             // label1
             // 
@@ -220,11 +220,11 @@ namespace GPSys_Desk_APP.Views
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.LinkLabel link_Login;
+        private System.Windows.Forms.LinkLabel Link_Login;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Controls.Buttons btn_Exit;
+        private Controls.Buttons Btn_Exit;
         private System.Windows.Forms.Label label_Info2;
         private System.Windows.Forms.Label label_Info1;
         private System.Windows.Forms.Label label_Login;

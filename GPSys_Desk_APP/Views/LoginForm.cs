@@ -14,23 +14,11 @@ namespace GPSys_Desk_APP.Views
 {
     public partial class LoginForm : Form
     {
-        Thread goToPassRecForm, goToWorkspaceForm;
+        Thread goToPassRecForm, goToWorkspaceForm, goToConnectionSettingForm;
         public LoginForm()
         {
             InitializeComponent();
-            textBox_Pass.UseSystemPasswordChar = true;
-        }
-
-        private void checkBox_Pass_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_Pass.Checked)
-            {
-                textBox_Pass.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox_Pass.UseSystemPasswordChar = true;
-            }
+            Tb_LoginPassword.UseSystemPasswordChar = true;
         }
 
         private void Link_PassRec_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -46,7 +34,24 @@ namespace GPSys_Desk_APP.Views
             Application.Run(new PassRecForm());
         }
 
-        private void btn_Entrar_Click(object sender, EventArgs e)
+        private void WorkspaceForm(object obj)
+        {
+            Application.Run(new WorkspaceForm());
+        }
+
+        private void Cb_ShowPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Cb_ShowPass.Checked)
+            {
+                Tb_LoginPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                Tb_LoginPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void Btn_Login_Click(object sender, EventArgs e)
         {
             this.Close();
             goToWorkspaceForm = new Thread(WorkspaceForm);
@@ -54,9 +59,16 @@ namespace GPSys_Desk_APP.Views
             goToWorkspaceForm.Start();
         }
 
-        private void WorkspaceForm(object obj)
+        private void Btn_DBSetting_Click(object sender, EventArgs e)
         {
-            Application.Run(new WorkspaceForm());
+            goToConnectionSettingForm = new Thread(ToConnectionSettingForm);
+            goToConnectionSettingForm.SetApartmentState(ApartmentState.STA);
+            goToConnectionSettingForm.Start();
+        }
+
+        private void ToConnectionSettingForm(object obj)
+        {
+            Application.Run(new DBConnectionSettingForm());
         }
     }
 }

@@ -39,8 +39,7 @@ namespace GPSys_Desk_APP
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.progress_Panel = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.processBar = new System.Windows.Forms.ProgressBar();
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -148,24 +147,13 @@ namespace GPSys_Desk_APP
             this.progress_Panel.Size = new System.Drawing.Size(0, 20);
             this.progress_Panel.TabIndex = 7;
             this.progress_Panel.UseWaitCursor = true;
-            this.progress_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.progress_Panel_Paint);
+            //this.progress_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.progress_Panel_Paint);
             // 
-            // timer1
+            // Timer1
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 15;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // processBar
-            // 
-            this.processBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.processBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.processBar.Location = new System.Drawing.Point(45, 12);
-            this.processBar.Name = "processBar";
-            this.processBar.Size = new System.Drawing.Size(277, 23);
-            this.processBar.TabIndex = 4;
-            this.processBar.UseWaitCursor = true;
-            this.processBar.Visible = false;
+            this.Timer1.Enabled = true;
+            this.Timer1.Interval = 15;
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // label3
             // 
@@ -227,7 +215,6 @@ namespace GPSys_Desk_APP
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.processBar);
             this.Controls.Add(this.label_Status);
             this.Controls.Add(this.label_Wellcome);
             this.Controls.Add(this.label_GPS);
@@ -262,8 +249,7 @@ namespace GPSys_Desk_APP
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel progress_Panel;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ProgressBar processBar;
+        private System.Windows.Forms.Timer Timer1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

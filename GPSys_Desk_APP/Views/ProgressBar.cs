@@ -49,8 +49,6 @@ namespace GPSys_Desk_APP
             progress.ProgressChanged += (o, report) =>
             {
                 label_Status.Text = string.Format("A carregar...{0}%", report.PercentComplete);
-                processBar.Value = report.PercentComplete;
-                processBar.Update();
             };
 
             await ProcessData(list, progress);
@@ -58,12 +56,12 @@ namespace GPSys_Desk_APP
         }
 
         // Timer
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
             progress_Panel.Width += 2;
             if(progress_Panel.Width >= 800)
             {
-                timer1.Stop();
+                Timer1.Stop();
                 this.Close();
                 goToLogin = new Thread(ControlAcessForm);
                 goToLogin.SetApartmentState(ApartmentState.STA);
@@ -73,11 +71,6 @@ namespace GPSys_Desk_APP
         private void ControlAcessForm(object obj)
         {
             Application.Run(new LoginForm());
-        }
-
-        private void progress_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

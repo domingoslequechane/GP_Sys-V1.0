@@ -1,7 +1,7 @@
 ﻿
 namespace GPSys_Desk_APP.Views
 {
-    partial class ConfitmationNewPassForm
+    partial class ConfirmationNewPassForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,14 +29,14 @@ namespace GPSys_Desk_APP.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfitmationNewPassForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmationNewPassForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox_Error = new System.Windows.Forms.PictureBox();
             this.label_Login = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btn_Exit = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_ReturnToLogin = new GPSys_Desk_APP.Controls.Buttons();
             this.label_Info2 = new System.Windows.Forms.Label();
             this.label_Info1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -53,7 +53,7 @@ namespace GPSys_Desk_APP.Views
             this.panel1.Controls.Add(this.pictureBox_Error);
             this.panel1.Controls.Add(this.label_Login);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.btn_Exit);
+            this.panel1.Controls.Add(this.Btn_ReturnToLogin);
             this.panel1.Controls.Add(this.label_Info2);
             this.panel1.Controls.Add(this.label_Info1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -115,25 +115,25 @@ namespace GPSys_Desk_APP.Views
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // btn_Exit
+            // Btn_ReturnToLogin
             // 
-            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.btn_Exit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.btn_Exit.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_Exit.BorderRadius = 15;
-            this.btn_Exit.BorderSize = 0;
-            this.btn_Exit.FlatAppearance.BorderSize = 0;
-            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Location = new System.Drawing.Point(36, 339);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(232, 61);
-            this.btn_Exit.TabIndex = 17;
-            this.btn_Exit.Text = "Entrar";
-            this.btn_Exit.TextColor = System.Drawing.Color.White;
-            this.btn_Exit.UseVisualStyleBackColor = false;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            this.Btn_ReturnToLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ReturnToLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ReturnToLogin.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_ReturnToLogin.BorderRadius = 15;
+            this.Btn_ReturnToLogin.BorderSize = 0;
+            this.Btn_ReturnToLogin.FlatAppearance.BorderSize = 0;
+            this.Btn_ReturnToLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ReturnToLogin.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ReturnToLogin.ForeColor = System.Drawing.Color.White;
+            this.Btn_ReturnToLogin.Location = new System.Drawing.Point(36, 339);
+            this.Btn_ReturnToLogin.Name = "Btn_ReturnToLogin";
+            this.Btn_ReturnToLogin.Size = new System.Drawing.Size(232, 61);
+            this.Btn_ReturnToLogin.TabIndex = 17;
+            this.Btn_ReturnToLogin.Text = "Entrar";
+            this.Btn_ReturnToLogin.TextColor = System.Drawing.Color.White;
+            this.Btn_ReturnToLogin.UseVisualStyleBackColor = false;
+            this.Btn_ReturnToLogin.Click += new System.EventHandler(this.Btn_ReturnToLogin_Click);
             // 
             // label_Info2
             // 
@@ -192,7 +192,7 @@ namespace GPSys_Desk_APP.Views
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Controls.Buttons btn_Exit;
+        private Controls.Buttons Btn_ReturnToLogin;
         private System.Windows.Forms.Label label_Info2;
         private System.Windows.Forms.Label label_Info1;
     }

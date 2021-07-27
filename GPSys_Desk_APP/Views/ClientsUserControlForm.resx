@@ -1732,7 +1732,7 @@
         CjdZ1KkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Delete_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_DeleteClient.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfUAAAH1CAYAAADvSGcRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAFMdJREFUeF7t3W1xZNuRhWFDMISBYAiGYgiGYAiGYAiGMBAMYSCYgUd72mfafbWy
@@ -1827,7 +1827,7 @@
         EwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Edit_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_EditClient.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfYAAAH1CAYAAAAEf9wSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAEVdJREFUeF7t3ettZMcVhVGFoBAUgkJQCA7BIUwICsEhKASHoBAUgkNwBvJtWXcw
@@ -1907,7 +1907,7 @@
         RwCgpngEACr684f/AUGkoW1gE4QQAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Clear_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_SearchClear.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfUAAAH1CAYAAADvSGcRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAIKpJREFUeF7t24GRI8eRBVCZcCbQBJqwpsgEmkBTaMqaIBNkgjzQdVJJqVjM3Z0B

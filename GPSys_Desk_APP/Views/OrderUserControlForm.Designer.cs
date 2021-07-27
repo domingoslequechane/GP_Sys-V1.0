@@ -31,16 +31,16 @@ namespace GPSys_Desk_APP.Views
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderUserControlForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.ComboBox_OrdenarPor = new System.Windows.Forms.ComboBox();
+            this.Btn_ExportOrder = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_NewOrder = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_ClearSearchCamp = new GPSys_Desk_APP.Controls.Buttons();
+            this.Cb_OrderBy = new System.Windows.Forms.ComboBox();
+            this.Cb_SetOrderState = new System.Windows.Forms.ComboBox();
             this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.Export_btn = new GPSys_Desk_APP.Controls.Buttons();
-            this.Delete_btn = new GPSys_Desk_APP.Controls.Buttons();
-            this.Clear_btn = new GPSys_Desk_APP.Controls.Buttons();
-            this.TextBox_Search = new GPSys_Desk_APP.Controls.OnlyInt();
-            this.ID = new GPSys_Desk_APP.Controls.OnlyInt();
-            this.buttons1 = new GPSys_Desk_APP.Controls.Buttons();
-            this.buttons2 = new GPSys_Desk_APP.Controls.Buttons();
+            this.Tb_OrderIDNumber = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Btn_DeleteOrder = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_EditOrder = new GPSys_Desk_APP.Controls.Buttons();
+            this.Tb_Search = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
@@ -49,59 +49,132 @@ namespace GPSys_Desk_APP.Views
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.Export_btn);
-            this.panel1.Controls.Add(this.buttons1);
-            this.panel1.Controls.Add(this.Clear_btn);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.ComboBox_OrdenarPor);
+            this.panel1.Controls.Add(this.Btn_ExportOrder);
+            this.panel1.Controls.Add(this.Btn_NewOrder);
+            this.panel1.Controls.Add(this.Btn_ClearSearchCamp);
+            this.panel1.Controls.Add(this.Cb_OrderBy);
+            this.panel1.Controls.Add(this.Cb_SetOrderState);
             this.panel1.Controls.Add(this.DataGridView);
-            this.panel1.Controls.Add(this.ID);
-            this.panel1.Controls.Add(this.TextBox_Search);
-            this.panel1.Controls.Add(this.Delete_btn);
-            this.panel1.Controls.Add(this.buttons2);
+            this.panel1.Controls.Add(this.Tb_OrderIDNumber);
+            this.panel1.Controls.Add(this.Btn_DeleteOrder);
+            this.panel1.Controls.Add(this.Btn_EditOrder);
+            this.panel1.Controls.Add(this.Tb_Search);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1058, 618);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // Btn_ExportOrder
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Btn_ExportOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_ExportOrder.AutoSize = true;
+            this.Btn_ExportOrder.BackColor = System.Drawing.Color.Gray;
+            this.Btn_ExportOrder.BackgroundColor = System.Drawing.Color.Gray;
+            this.Btn_ExportOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_ExportOrder.BackgroundImage")));
+            this.Btn_ExportOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_ExportOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_ExportOrder.BorderRadius = 7;
+            this.Btn_ExportOrder.BorderSize = 0;
+            this.Btn_ExportOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ExportOrder.FlatAppearance.BorderSize = 0;
+            this.Btn_ExportOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_ExportOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ExportOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ExportOrder.ForeColor = System.Drawing.Color.White;
+            this.Btn_ExportOrder.Location = new System.Drawing.Point(1013, 21);
+            this.Btn_ExportOrder.Name = "Btn_ExportOrder";
+            this.Btn_ExportOrder.Size = new System.Drawing.Size(37, 37);
+            this.Btn_ExportOrder.TabIndex = 5;
+            this.Btn_ExportOrder.TextColor = System.Drawing.Color.White;
+            this.Btn_ExportOrder.UseVisualStyleBackColor = false;
+            // 
+            // Btn_NewOrder
+            // 
+            this.Btn_NewOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_NewOrder.AutoSize = true;
+            this.Btn_NewOrder.BackColor = System.Drawing.Color.Gray;
+            this.Btn_NewOrder.BackgroundColor = System.Drawing.Color.Gray;
+            this.Btn_NewOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_NewOrder.BackgroundImage")));
+            this.Btn_NewOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_NewOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_NewOrder.BorderRadius = 7;
+            this.Btn_NewOrder.BorderSize = 0;
+            this.Btn_NewOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_NewOrder.FlatAppearance.BorderSize = 0;
+            this.Btn_NewOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_NewOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_NewOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_NewOrder.ForeColor = System.Drawing.Color.White;
+            this.Btn_NewOrder.Location = new System.Drawing.Point(921, 21);
+            this.Btn_NewOrder.Name = "Btn_NewOrder";
+            this.Btn_NewOrder.Size = new System.Drawing.Size(37, 37);
+            this.Btn_NewOrder.TabIndex = 5;
+            this.Btn_NewOrder.TextColor = System.Drawing.Color.White;
+            this.Btn_NewOrder.UseVisualStyleBackColor = false;
+            this.Btn_NewOrder.Click += new System.EventHandler(this.Btn_NewOrder_Click);
+            // 
+            // Btn_ClearSearchCamp
+            // 
+            this.Btn_ClearSearchCamp.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_ClearSearchCamp.BackColor = System.Drawing.Color.White;
+            this.Btn_ClearSearchCamp.BackgroundColor = System.Drawing.Color.White;
+            this.Btn_ClearSearchCamp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_ClearSearchCamp.BackgroundImage")));
+            this.Btn_ClearSearchCamp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_ClearSearchCamp.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_ClearSearchCamp.BorderRadius = 0;
+            this.Btn_ClearSearchCamp.BorderSize = 0;
+            this.Btn_ClearSearchCamp.FlatAppearance.BorderSize = 0;
+            this.Btn_ClearSearchCamp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.Btn_ClearSearchCamp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Btn_ClearSearchCamp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ClearSearchCamp.ForeColor = System.Drawing.Color.White;
+            this.Btn_ClearSearchCamp.Location = new System.Drawing.Point(313, 30);
+            this.Btn_ClearSearchCamp.Name = "Btn_ClearSearchCamp";
+            this.Btn_ClearSearchCamp.Size = new System.Drawing.Size(18, 18);
+            this.Btn_ClearSearchCamp.TabIndex = 4;
+            this.Btn_ClearSearchCamp.TabStop = false;
+            this.Btn_ClearSearchCamp.TextColor = System.Drawing.Color.White;
+            this.Btn_ClearSearchCamp.UseVisualStyleBackColor = false;
+            this.Btn_ClearSearchCamp.Click += new System.EventHandler(this.Btn_ClearSearchCamp_Click);
+            // 
+            // Cb_OrderBy
+            // 
+            this.Cb_OrderBy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Cb_OrderBy.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Cb_OrderBy.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Cb_OrderBy.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cb_OrderBy.FormattingEnabled = true;
+            this.Cb_OrderBy.Items.AddRange(new object[] {
             "Aguardando",
             "Em andamento",
             "Em pausa",
             "Concluidos"});
-            this.comboBox1.Location = new System.Drawing.Point(363, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 28);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.TabStop = false;
-            this.comboBox1.Text = "Ordenar por";
+            this.Cb_OrderBy.Location = new System.Drawing.Point(363, 25);
+            this.Cb_OrderBy.Name = "Cb_OrderBy";
+            this.Cb_OrderBy.Size = new System.Drawing.Size(175, 28);
+            this.Cb_OrderBy.TabIndex = 1;
+            this.Cb_OrderBy.TabStop = false;
+            this.Cb_OrderBy.Text = "Ordenar por";
             // 
-            // ComboBox_OrdenarPor
+            // Cb_SetOrderState
             // 
-            this.ComboBox_OrdenarPor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ComboBox_OrdenarPor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.ComboBox_OrdenarPor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.ComboBox_OrdenarPor.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBox_OrdenarPor.FormattingEnabled = true;
-            this.ComboBox_OrdenarPor.Items.AddRange(new object[] {
+            this.Cb_SetOrderState.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Cb_SetOrderState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Cb_SetOrderState.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Cb_SetOrderState.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cb_SetOrderState.FormattingEnabled = true;
+            this.Cb_SetOrderState.Items.AddRange(new object[] {
             "Aguardando",
             "Em andamento",
             "Em pausa",
             "Concluido"});
-            this.ComboBox_OrdenarPor.Location = new System.Drawing.Point(561, 25);
-            this.ComboBox_OrdenarPor.Name = "ComboBox_OrdenarPor";
-            this.ComboBox_OrdenarPor.Size = new System.Drawing.Size(175, 28);
-            this.ComboBox_OrdenarPor.TabIndex = 1;
-            this.ComboBox_OrdenarPor.TabStop = false;
-            this.ComboBox_OrdenarPor.Text = "Definir estado";
+            this.Cb_SetOrderState.Location = new System.Drawing.Point(561, 25);
+            this.Cb_SetOrderState.Name = "Cb_SetOrderState";
+            this.Cb_SetOrderState.Size = new System.Drawing.Size(175, 28);
+            this.Cb_SetOrderState.TabIndex = 1;
+            this.Cb_SetOrderState.TabStop = false;
+            this.Cb_SetOrderState.Text = "Definir estado";
             // 
             // DataGridView
             // 
@@ -118,150 +191,74 @@ namespace GPSys_Desk_APP.Views
             this.DataGridView.Size = new System.Drawing.Size(1042, 528);
             this.DataGridView.TabIndex = 0;
             // 
-            // Export_btn
+            // Tb_OrderIDNumber
             // 
-            this.Export_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Export_btn.AutoSize = true;
-            this.Export_btn.BackColor = System.Drawing.Color.Gray;
-            this.Export_btn.BackgroundColor = System.Drawing.Color.Gray;
-            this.Export_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Export_btn.BackgroundImage")));
-            this.Export_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Export_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Export_btn.BorderRadius = 7;
-            this.Export_btn.BorderSize = 0;
-            this.Export_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Export_btn.FlatAppearance.BorderSize = 0;
-            this.Export_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Export_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Export_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Export_btn.ForeColor = System.Drawing.Color.White;
-            this.Export_btn.Location = new System.Drawing.Point(1013, 21);
-            this.Export_btn.Name = "Export_btn";
-            this.Export_btn.Size = new System.Drawing.Size(37, 37);
-            this.Export_btn.TabIndex = 5;
-            this.Export_btn.TextColor = System.Drawing.Color.White;
-            this.Export_btn.UseVisualStyleBackColor = false;
+            this.Tb_OrderIDNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Tb_OrderIDNumber.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_OrderIDNumber.Location = new System.Drawing.Point(776, 25);
+            this.Tb_OrderIDNumber.Name = "Tb_OrderIDNumber";
+            this.Tb_OrderIDNumber.Size = new System.Drawing.Size(63, 28);
+            this.Tb_OrderIDNumber.TabIndex = 7;
+            this.Tb_OrderIDNumber.Text = "ID";
+            this.Tb_OrderIDNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // Delete_btn
+            // Btn_DeleteOrder
             // 
-            this.Delete_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Delete_btn.AutoSize = true;
-            this.Delete_btn.BackColor = System.Drawing.Color.Gray;
-            this.Delete_btn.BackgroundColor = System.Drawing.Color.Gray;
-            this.Delete_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Delete_btn.BackgroundImage")));
-            this.Delete_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Delete_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Delete_btn.BorderRadius = 7;
-            this.Delete_btn.BorderSize = 0;
-            this.Delete_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Delete_btn.FlatAppearance.BorderSize = 0;
-            this.Delete_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Delete_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Delete_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_btn.ForeColor = System.Drawing.Color.White;
-            this.Delete_btn.Location = new System.Drawing.Point(849, 21);
-            this.Delete_btn.Name = "Delete_btn";
-            this.Delete_btn.Size = new System.Drawing.Size(37, 37);
-            this.Delete_btn.TabIndex = 5;
-            this.Delete_btn.TextColor = System.Drawing.Color.White;
-            this.Delete_btn.UseVisualStyleBackColor = false;
-            this.Delete_btn.Click += new System.EventHandler(this.Delete_btn_Click);
+            this.Btn_DeleteOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_DeleteOrder.AutoSize = true;
+            this.Btn_DeleteOrder.BackColor = System.Drawing.Color.Gray;
+            this.Btn_DeleteOrder.BackgroundColor = System.Drawing.Color.Gray;
+            this.Btn_DeleteOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_DeleteOrder.BackgroundImage")));
+            this.Btn_DeleteOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_DeleteOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_DeleteOrder.BorderRadius = 7;
+            this.Btn_DeleteOrder.BorderSize = 0;
+            this.Btn_DeleteOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_DeleteOrder.FlatAppearance.BorderSize = 0;
+            this.Btn_DeleteOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_DeleteOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_DeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_DeleteOrder.ForeColor = System.Drawing.Color.White;
+            this.Btn_DeleteOrder.Location = new System.Drawing.Point(849, 21);
+            this.Btn_DeleteOrder.Name = "Btn_DeleteOrder";
+            this.Btn_DeleteOrder.Size = new System.Drawing.Size(37, 37);
+            this.Btn_DeleteOrder.TabIndex = 5;
+            this.Btn_DeleteOrder.TextColor = System.Drawing.Color.White;
+            this.Btn_DeleteOrder.UseVisualStyleBackColor = false;
             // 
-            // Clear_btn
+            // Btn_EditOrder
             // 
-            this.Clear_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Clear_btn.BackColor = System.Drawing.Color.White;
-            this.Clear_btn.BackgroundColor = System.Drawing.Color.White;
-            this.Clear_btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Clear_btn.BackgroundImage")));
-            this.Clear_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Clear_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Clear_btn.BorderRadius = 0;
-            this.Clear_btn.BorderSize = 0;
-            this.Clear_btn.FlatAppearance.BorderSize = 0;
-            this.Clear_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.Clear_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Clear_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Clear_btn.ForeColor = System.Drawing.Color.White;
-            this.Clear_btn.Location = new System.Drawing.Point(313, 30);
-            this.Clear_btn.Name = "Clear_btn";
-            this.Clear_btn.Size = new System.Drawing.Size(18, 18);
-            this.Clear_btn.TabIndex = 4;
-            this.Clear_btn.TabStop = false;
-            this.Clear_btn.TextColor = System.Drawing.Color.White;
-            this.Clear_btn.UseVisualStyleBackColor = false;
-            this.Clear_btn.Click += new System.EventHandler(this.Clear_btn_Click);
+            this.Btn_EditOrder.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_EditOrder.AutoSize = true;
+            this.Btn_EditOrder.BackColor = System.Drawing.Color.Gray;
+            this.Btn_EditOrder.BackgroundColor = System.Drawing.Color.Gray;
+            this.Btn_EditOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_EditOrder.BackgroundImage")));
+            this.Btn_EditOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_EditOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_EditOrder.BorderRadius = 7;
+            this.Btn_EditOrder.BorderSize = 0;
+            this.Btn_EditOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_EditOrder.FlatAppearance.BorderSize = 0;
+            this.Btn_EditOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_EditOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_EditOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_EditOrder.ForeColor = System.Drawing.Color.White;
+            this.Btn_EditOrder.Location = new System.Drawing.Point(967, 21);
+            this.Btn_EditOrder.Name = "Btn_EditOrder";
+            this.Btn_EditOrder.Size = new System.Drawing.Size(37, 37);
+            this.Btn_EditOrder.TabIndex = 5;
+            this.Btn_EditOrder.TextColor = System.Drawing.Color.White;
+            this.Btn_EditOrder.UseVisualStyleBackColor = false;
+            this.Btn_EditOrder.Click += new System.EventHandler(this.Btn_EditOrder_Click);
             // 
-            // TextBox_Search
+            // Tb_Search
             // 
-            this.TextBox_Search.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TextBox_Search.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Search.Location = new System.Drawing.Point(8, 25);
-            this.TextBox_Search.Name = "TextBox_Search";
-            this.TextBox_Search.Size = new System.Drawing.Size(329, 28);
-            this.TextBox_Search.TabIndex = 7;
-            this.TextBox_Search.Text = "Buscar ordem...";
-            this.TextBox_Search.TextChanged += new System.EventHandler(this.TextBox_Search_TextChanged);
-            // 
-            // ID
-            // 
-            this.ID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ID.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(776, 25);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(63, 28);
-            this.ID.TabIndex = 7;
-            this.ID.Text = "ID";
-            this.ID.TextChanged += new System.EventHandler(this.TextBox_Search_TextChanged);
-            // 
-            // buttons1
-            // 
-            this.buttons1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttons1.AutoSize = true;
-            this.buttons1.BackColor = System.Drawing.Color.Gray;
-            this.buttons1.BackgroundColor = System.Drawing.Color.Gray;
-            this.buttons1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttons1.BackgroundImage")));
-            this.buttons1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttons1.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons1.BorderRadius = 7;
-            this.buttons1.BorderSize = 0;
-            this.buttons1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons1.FlatAppearance.BorderSize = 0;
-            this.buttons1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons1.ForeColor = System.Drawing.Color.White;
-            this.buttons1.Location = new System.Drawing.Point(921, 21);
-            this.buttons1.Name = "buttons1";
-            this.buttons1.Size = new System.Drawing.Size(37, 37);
-            this.buttons1.TabIndex = 5;
-            this.buttons1.TextColor = System.Drawing.Color.White;
-            this.buttons1.UseVisualStyleBackColor = false;
-            this.buttons1.Click += new System.EventHandler(this.AddOrder_btn_Click);
-            // 
-            // buttons2
-            // 
-            this.buttons2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttons2.AutoSize = true;
-            this.buttons2.BackColor = System.Drawing.Color.Gray;
-            this.buttons2.BackgroundColor = System.Drawing.Color.Gray;
-            this.buttons2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttons2.BackgroundImage")));
-            this.buttons2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttons2.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons2.BorderRadius = 7;
-            this.buttons2.BorderSize = 0;
-            this.buttons2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons2.FlatAppearance.BorderSize = 0;
-            this.buttons2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons2.ForeColor = System.Drawing.Color.White;
-            this.buttons2.Location = new System.Drawing.Point(967, 21);
-            this.buttons2.Name = "buttons2";
-            this.buttons2.Size = new System.Drawing.Size(37, 37);
-            this.buttons2.TabIndex = 5;
-            this.buttons2.TextColor = System.Drawing.Color.White;
-            this.buttons2.UseVisualStyleBackColor = false;
-            this.buttons2.Click += new System.EventHandler(this.Edit_btn_Click);
+            this.Tb_Search.Font = new System.Drawing.Font("Gotham", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Search.Location = new System.Drawing.Point(8, 25);
+            this.Tb_Search.Name = "Tb_Search";
+            this.Tb_Search.Size = new System.Drawing.Size(329, 28);
+            this.Tb_Search.TabIndex = 7;
+            this.Tb_Search.Text = "Buscar..";
             // 
             // OrderUserControlForm
             // 
@@ -283,14 +280,14 @@ namespace GPSys_Desk_APP.Views
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView DataGridView;
-        private Controls.Buttons Clear_btn;
-        private System.Windows.Forms.ComboBox ComboBox_OrdenarPor;
-        private Controls.Buttons Export_btn;
-        private Controls.Buttons Delete_btn;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Controls.OnlyInt TextBox_Search;
-        private Controls.OnlyInt ID;
-        private Controls.Buttons buttons1;
-        private Controls.Buttons buttons2;
+        private Controls.Buttons Btn_ClearSearchCamp;
+        private System.Windows.Forms.ComboBox Cb_SetOrderState;
+        private Controls.Buttons Btn_ExportOrder;
+        private Controls.Buttons Btn_DeleteOrder;
+        private System.Windows.Forms.ComboBox Cb_OrderBy;
+        private Controls.OnlyInt Tb_OrderIDNumber;
+        private Controls.Buttons Btn_NewOrder;
+        private Controls.Buttons Btn_EditOrder;
+        private System.Windows.Forms.TextBox Tb_Search;
     }
 }

@@ -1732,7 +1732,7 @@
         CjdZ1KkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Export_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_ExportOrder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfUAAAH1CAYAAADvSGcRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAGMBJREFUeF7t3WuRrEW6BeCRgAQkIAEJSEACEo4EJCABCSNhJCABB5wvidlTbFgb
@@ -1844,7 +1844,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="buttons1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_NewOrder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfYAAAH1CAYAAAAEf9wSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAEulJREFUeF7t3dGNHNmVBFCZIBNogkygCWMCTZAJNGFMkAkyYU2QCTJBHsxWEpjF
@@ -1931,7 +1931,7 @@
         Rc0TAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Clear_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_ClearSearchCamp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfUAAAH1CAYAAADvSGcRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAIKpJREFUeF7t24GRI8eRBVCZcCbQBJqwpsgEmkBTaMqaIBNkgjzQdVJJqVjM3Z0B
@@ -2076,7 +2076,7 @@
         AMB+yiEAsJ9yCADspxwCAPsphwDAfsohALCfcggA7Obff/t/CEJ2MdsjizAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="Delete_btn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_DeleteOrder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfUAAAH1CAYAAADvSGcRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAFMdJREFUeF7t3W1xZNuRhWFDMISBYAiGYgiGYAiGYAiGMBAMYSCYgUd72mfafbWy
@@ -2171,7 +2171,7 @@
         EwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="buttons2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Btn_EditOrder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfYAAAH1CAYAAAAEf9wSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAEVdJREFUeF7t3ettZMcVhVGFoBAUgkJQCA7BIUwICsEhKASHoBAUgkNwBvJtWXcw

@@ -11,15 +11,15 @@ using System.Threading;
 
 namespace GPSys_Desk_APP.Views
 {
-    public partial class ConfitmationNewPassForm : Form
+    public partial class ConfirmationNewPassForm : Form
     {
         Thread goToLoginForm;
-        public ConfitmationNewPassForm()
+        public ConfirmationNewPassForm()
         {
             InitializeComponent();
         }
 
-        private void btn_Exit_Click(object sender, EventArgs e)
+        private void Btn_ReturnToLogin_Click(object sender, EventArgs e)
         {
             this.Close();
             goToLoginForm = new Thread(LoginForm);

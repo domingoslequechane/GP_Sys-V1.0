@@ -19,12 +19,12 @@ namespace GPSys_Desk_APP.Views
             InitializeComponent();
         }
 
-        private void btn_Exit_Click(object sender, EventArgs e)
+        private void Btn_Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void link_Login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Link_Login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
             goToLoginForm = new Thread(LoginForm);

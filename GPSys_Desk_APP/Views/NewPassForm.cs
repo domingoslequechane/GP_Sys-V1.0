@@ -18,22 +18,8 @@ namespace GPSys_Desk_APP.Views
         public NewPassForm()
         {
             InitializeComponent();
-            textBox_NewPass1.UseSystemPasswordChar = true;
-            textBox_NewPass2.UseSystemPasswordChar = true;
-        }
-
-        private void checkBox_Pass12_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox_Pass12.Checked)
-            {
-                textBox_NewPass1.UseSystemPasswordChar = false;
-                textBox_NewPass2.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                textBox_NewPass1.UseSystemPasswordChar = true;
-                textBox_NewPass2.UseSystemPasswordChar = true;
-            }
+            Tb_NewPassword1.UseSystemPasswordChar = true;
+            Tb_NewPassword2.UseSystemPasswordChar = true;
         }
 
         private void Link_Login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -49,7 +35,7 @@ namespace GPSys_Desk_APP.Views
             Application.Run(new LoginForm());
         }
 
-        private void btn_Atualizar_Click(object sender, EventArgs e)
+        private void Btn_UpdatePassword_Click(object sender, EventArgs e)
         {
             this.Close();
             goToConfitmationNewPassForm = new Thread(ConfitmationNewPassForm);
@@ -57,9 +43,23 @@ namespace GPSys_Desk_APP.Views
             goToConfitmationNewPassForm.Start();
         }
 
+        private void Cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Cb_ShowPassword.Checked)
+            {
+                Tb_NewPassword1.UseSystemPasswordChar = false;
+                Tb_NewPassword2.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                Tb_NewPassword1.UseSystemPasswordChar = true;
+                Tb_NewPassword2.UseSystemPasswordChar = true;
+            }
+        }
+
         private void ConfitmationNewPassForm(object obj)
         {
-            Application.Run(new ConfitmationNewPassForm());
+            Application.Run(new ConfirmationNewPassForm());
         }
     }
 }

@@ -18,22 +18,22 @@ namespace GPSys_Desk_APP.Views
         public PassRecForm()
         {
             InitializeComponent();
-            textBox_RecCode.UseSystemPasswordChar = true;
+            Tb_RecoveryCode.UseSystemPasswordChar = true;
         }
 
-        private void checkBox_Pass_CheckedChanged(object sender, EventArgs e)
+        private void Cb_ShowHideCode_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_Pass.Checked)
+            if (Cb_ShowHideCode.Checked)
             {
-                textBox_RecCode.UseSystemPasswordChar = false;
+                Tb_RecoveryCode.UseSystemPasswordChar = false;
             }
             else
             {
-                textBox_RecCode.UseSystemPasswordChar = true;
+                Tb_RecoveryCode.UseSystemPasswordChar = true;
             }
         }
 
-        private void link_Login_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Link_ReturnToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
             goToLogin = new Thread(LoginForm);
@@ -46,7 +46,7 @@ namespace GPSys_Desk_APP.Views
             Application.Run(new LoginForm());
         }
 
-        private void Link_CodeRec_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Link_RetrieveCode_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Close();
             goToCodeRecErroForm = new Thread(CodeRecErroForm);
@@ -54,17 +54,17 @@ namespace GPSys_Desk_APP.Views
             goToCodeRecErroForm.Start();
         }
 
-        private void CodeRecErroForm(object obj)
-        {
-            Application.Run(new CodRecErroForm());
-        }
-
-        private void btn_Verificar_Click(object sender, EventArgs e)
+        private void Btn_VerifyCode_Click(object sender, EventArgs e)
         {
             this.Close();
             goToNewPassForm = new Thread(NewPassForm);
             goToNewPassForm.SetApartmentState(ApartmentState.STA);
             goToNewPassForm.Start();
+        }
+
+        private void CodeRecErroForm(object obj)
+        {
+            Application.Run(new CodRecErroForm());
         }
 
         private void NewPassForm(object obj)

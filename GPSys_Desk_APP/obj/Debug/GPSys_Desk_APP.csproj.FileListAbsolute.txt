@@ -2,7 +2,6 @@ D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Des
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\GPSys_Desk_APP.exe
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\GPSys_Desk_APP.pdb
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.ClientsUserControlForm.resources
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.ConfitmationNewPassForm.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.NewPassForm.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.CodRecErroForm.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.OrderUserControlForm.resources
@@ -20,12 +19,9 @@ D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Des
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.NewOrderForm.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.ClientsUpdateForm.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.OrderUpdateForm.resources
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\CamadaDeEntidades.dll
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\CamadaDeNegocio.dll
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\CamadaDeDados.dll
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\CamadaDeEntidades.pdb
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\CamadaDeNegocio.pdb
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\bin\Debug\CamadaDeDados.pdb
-D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.csproj.CopyComplete
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.ServiceUserControlForm.resources
 D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.PriceUserControlForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.ColaboratorsUserControl.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.DBConnectionSettingForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.EmployeeForm.resources
+D:\LEQ\+Workspace\Code\Gomes Publicidade\System\GPSys_Desk\GP_Sys-V1.0\GPSys_Desk_APP\obj\Debug\GPSys_Desk_APP.Views.ConfirmationNewPassForm.resources

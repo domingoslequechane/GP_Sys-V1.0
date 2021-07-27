@@ -19,7 +19,12 @@ namespace GPSys_Desk_APP.Views
 
         private void PriceUserControlForm_Load(object sender, EventArgs e)
         {
-            TB_ClientName.Focus();
+            Tb_ClientName.Focus();
+        }
+
+        private void Btn_AddService_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

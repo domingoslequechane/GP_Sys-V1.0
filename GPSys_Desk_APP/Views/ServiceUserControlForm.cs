@@ -16,5 +16,10 @@ namespace GPSys_Desk_APP.Views
         {
             InitializeComponent();
         }
+
+        private void Btn_DeleteService_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

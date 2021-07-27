@@ -13,6 +13,21 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -71,11 +86,29 @@
     <Compile Include="Views\ClientsUserControlForm.Designer.cs">
       <DependentUpon>ClientsUserControlForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ConfitmationNewPassForm.cs">
+    <Compile Include="Views\ColaboratorsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ColaboratorsUserControl.Designer.cs">
+      <DependentUpon>ColaboratorsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConfirmationNewPassForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\ConfitmationNewPassForm.Designer.cs">
-      <DependentUpon>ConfitmationNewPassForm.cs</DependentUpon>
+    <Compile Include="Views\ConfirmationNewPassForm.Designer.cs">
+      <DependentUpon>ConfirmationNewPassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DBConnectionSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DBConnectionSettingForm.Designer.cs">
+      <DependentUpon>DBConnectionSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\NewOrderForm.cs">
       <SubType>Form</SubType>
@@ -157,8 +190,17 @@
     <EmbeddedResource Include="Views\ClientsUserControlForm.resx">
       <DependentUpon>ClientsUserControlForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ConfitmationNewPassForm.resx">
-      <DependentUpon>ConfitmationNewPassForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ColaboratorsUserControl.resx">
+      <DependentUpon>ColaboratorsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ConfirmationNewPassForm.resx">
+      <DependentUpon>ConfirmationNewPassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DBConnectionSettingForm.resx">
+      <DependentUpon>DBConnectionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NewOrderForm.resx">
       <DependentUpon>NewOrderForm.cs</DependentUpon>
@@ -228,17 +270,19 @@
     <Content Include="Ativo-2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CamadaDeEntidades\CamadaDeEntidades.csproj">
-      <Project>{ba870be9-b79f-448d-a539-e32f13a8dbdf}</Project>
-      <Name>CamadaDeEntidades</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CamadaDeNegocio\CamadaDeNegocio.csproj">
-      <Project>{824f8b86-2cb1-4ece-8512-ac7a8a027232}</Project>
-      <Name>CamadaDeNegocio</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,56 +44,56 @@ namespace GPSys_Desk_APP.Views
             this.label5 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.onlyInt1 = new GPSys_Desk_APP.Controls.OnlyInt();
-            this.onlyInt3 = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Tb_AmoutToPay = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Tb_Discount = new GPSys_Desk_APP.Controls.OnlyInt();
             this.label4 = new System.Windows.Forms.Label();
             this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.onlyInt2 = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Tb_AmountPaid = new GPSys_Desk_APP.Controls.OnlyInt();
             this.label27 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.onlyInt4 = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Tb_OutstandingBalance = new GPSys_Desk_APP.Controls.OnlyInt();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.TextBox_Note = new System.Windows.Forms.TextBox();
-            this.DT_Out = new System.Windows.Forms.DateTimePicker();
-            this.DT_In = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Tb_UnitPrice = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Tb_Note = new System.Windows.Forms.TextBox();
+            this.Dt_Out = new System.Windows.Forms.DateTimePicker();
+            this.Dt_In = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.Btn_AddSave = new GPSys_Desk_APP.Controls.Buttons();
             this.label28 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Cb_Service = new System.Windows.Forms.ComboBox();
             this.classEntidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.classNegocioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Label_OrderNumber = new System.Windows.Forms.Label();
+            this.Lbl_OrderNumber = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TB_ClientNUIT = new System.Windows.Forms.MaskedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.CB_ClientCity = new System.Windows.Forms.ComboBox();
-            this.TB_ClientEmail = new System.Windows.Forms.TextBox();
-            this.TB_ClientAddress = new System.Windows.Forms.TextBox();
-            this.TB_ClientName = new System.Windows.Forms.TextBox();
-            this.Label_ClientNumber = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Dud_Quantitity = new System.Windows.Forms.DomainUpDown();
+            this.Btn_CompleteOrder = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_ClearWishList = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_RemoveFromWishList = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_CancelOrder = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_UpdateWishList = new GPSys_Desk_APP.Controls.Buttons();
+            this.Tb_ClientContactNumber = new System.Windows.Forms.MaskedTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.TB_ClientContactNumber = new System.Windows.Forms.MaskedTextBox();
-            this.Cancel_btn = new GPSys_Desk_APP.Controls.Buttons();
-            this.buttons3 = new GPSys_Desk_APP.Controls.Buttons();
-            this.buttons1 = new GPSys_Desk_APP.Controls.Buttons();
-            this.Done_btn = new GPSys_Desk_APP.Controls.Buttons();
-            this.buttons2 = new GPSys_Desk_APP.Controls.Buttons();
-            this.Add_btn = new GPSys_Desk_APP.Controls.Buttons();
-            this.DUD_Quantitity = new System.Windows.Forms.DomainUpDown();
-            this.CB_Service = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.onlyInt5 = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Lbl_ClientNumber = new System.Windows.Forms.Label();
+            this.Tb_ClientName = new System.Windows.Forms.TextBox();
+            this.Tb_ClientAddress = new System.Windows.Forms.TextBox();
+            this.Tb_ClientEmail = new System.Windows.Forms.TextBox();
+            this.Cb_ClientCity = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Tb_ClientNUIT = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
@@ -114,11 +114,11 @@ namespace GPSys_Desk_APP.Views
             this.panel2.Controls.Add(this.groupBox3);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Controls.Add(this.Cancel_btn);
-            this.panel2.Controls.Add(this.buttons3);
-            this.panel2.Controls.Add(this.buttons1);
-            this.panel2.Controls.Add(this.Done_btn);
-            this.panel2.Controls.Add(this.buttons2);
+            this.panel2.Controls.Add(this.Btn_CompleteOrder);
+            this.panel2.Controls.Add(this.Btn_ClearWishList);
+            this.panel2.Controls.Add(this.Btn_RemoveFromWishList);
+            this.panel2.Controls.Add(this.Btn_CancelOrder);
+            this.panel2.Controls.Add(this.Btn_UpdateWishList);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -159,15 +159,15 @@ namespace GPSys_Desk_APP.Views
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.onlyInt1);
-            this.groupBox3.Controls.Add(this.onlyInt3);
+            this.groupBox3.Controls.Add(this.Tb_AmoutToPay);
+            this.groupBox3.Controls.Add(this.Tb_Discount);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.DataGridView);
-            this.groupBox3.Controls.Add(this.onlyInt2);
+            this.groupBox3.Controls.Add(this.Tb_AmountPaid);
             this.groupBox3.Controls.Add(this.label27);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.label29);
-            this.groupBox3.Controls.Add(this.onlyInt4);
+            this.groupBox3.Controls.Add(this.Tb_OutstandingBalance);
             this.groupBox3.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(30, 857);
             this.groupBox3.Name = "groupBox3";
@@ -182,7 +182,7 @@ namespace GPSys_Desk_APP.Views
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.label18.Location = new System.Drawing.Point(588, 280);
+            this.label18.Location = new System.Drawing.Point(599, 280);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(30, 19);
             this.label18.TabIndex = 72;
@@ -193,7 +193,7 @@ namespace GPSys_Desk_APP.Views
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(435, 280);
+            this.label5.Location = new System.Drawing.Point(446, 280);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 19);
             this.label5.TabIndex = 72;
@@ -215,38 +215,38 @@ namespace GPSys_Desk_APP.Views
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(283, 280);
+            this.label3.Location = new System.Drawing.Point(294, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 19);
             this.label3.TabIndex = 72;
             this.label3.Text = "Mt";
             // 
-            // onlyInt1
+            // Tb_AmoutToPay
             // 
-            this.onlyInt1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyInt1.Location = new System.Drawing.Point(30, 276);
-            this.onlyInt1.Name = "onlyInt1";
-            this.onlyInt1.ReadOnly = true;
-            this.onlyInt1.Size = new System.Drawing.Size(99, 27);
-            this.onlyInt1.TabIndex = 67;
-            this.onlyInt1.Text = "0";
-            this.onlyInt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Tb_AmoutToPay.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_AmoutToPay.Location = new System.Drawing.Point(30, 276);
+            this.Tb_AmoutToPay.Name = "Tb_AmoutToPay";
+            this.Tb_AmoutToPay.ReadOnly = true;
+            this.Tb_AmoutToPay.Size = new System.Drawing.Size(99, 27);
+            this.Tb_AmoutToPay.TabIndex = 67;
+            this.Tb_AmoutToPay.Text = "0";
+            this.Tb_AmoutToPay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // onlyInt3
+            // Tb_Discount
             // 
-            this.onlyInt3.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyInt3.Location = new System.Drawing.Point(182, 276);
-            this.onlyInt3.Name = "onlyInt3";
-            this.onlyInt3.Size = new System.Drawing.Size(99, 27);
-            this.onlyInt3.TabIndex = 67;
-            this.onlyInt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Tb_Discount.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Discount.Location = new System.Drawing.Point(193, 276);
+            this.Tb_Discount.Name = "Tb_Discount";
+            this.Tb_Discount.Size = new System.Drawing.Size(99, 27);
+            this.Tb_Discount.TabIndex = 67;
+            this.Tb_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(185, 254);
+            this.label4.Location = new System.Drawing.Point(196, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 19);
             this.label4.TabIndex = 65;
@@ -303,21 +303,21 @@ namespace GPSys_Desk_APP.Views
             this.DataGridView.Size = new System.Drawing.Size(606, 174);
             this.DataGridView.TabIndex = 41;
             // 
-            // onlyInt2
+            // Tb_AmountPaid
             // 
-            this.onlyInt2.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyInt2.Location = new System.Drawing.Point(335, 276);
-            this.onlyInt2.Name = "onlyInt2";
-            this.onlyInt2.Size = new System.Drawing.Size(98, 27);
-            this.onlyInt2.TabIndex = 75;
-            this.onlyInt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Tb_AmountPaid.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_AmountPaid.Location = new System.Drawing.Point(346, 276);
+            this.Tb_AmountPaid.Name = "Tb_AmountPaid";
+            this.Tb_AmountPaid.Size = new System.Drawing.Size(98, 27);
+            this.Tb_AmountPaid.TabIndex = 75;
+            this.Tb_AmountPaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label27
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(338, 254);
+            this.label27.Location = new System.Drawing.Point(349, 254);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(99, 19);
             this.label27.TabIndex = 74;
@@ -330,53 +330,53 @@ namespace GPSys_Desk_APP.Views
             this.label20.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(33, 254);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(104, 19);
+            this.label20.Size = new System.Drawing.Size(136, 19);
             this.label20.TabIndex = 68;
-            this.label20.Text = "Valor pagar:";
+            this.label20.Text = "Valor por pagar:";
             // 
             // label29
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(491, 254);
+            this.label29.Location = new System.Drawing.Point(502, 254);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(92, 19);
             this.label29.TabIndex = 69;
             this.label29.Text = "Em dívida:";
             // 
-            // onlyInt4
+            // Tb_OutstandingBalance
             // 
-            this.onlyInt4.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyInt4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.onlyInt4.Location = new System.Drawing.Point(488, 276);
-            this.onlyInt4.Name = "onlyInt4";
-            this.onlyInt4.ReadOnly = true;
-            this.onlyInt4.Size = new System.Drawing.Size(98, 27);
-            this.onlyInt4.TabIndex = 75;
-            this.onlyInt4.Text = "0";
-            this.onlyInt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.Tb_OutstandingBalance.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_OutstandingBalance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Tb_OutstandingBalance.Location = new System.Drawing.Point(499, 276);
+            this.Tb_OutstandingBalance.Name = "Tb_OutstandingBalance";
+            this.Tb_OutstandingBalance.ReadOnly = true;
+            this.Tb_OutstandingBalance.Size = new System.Drawing.Size(98, 27);
+            this.Tb_OutstandingBalance.TabIndex = 75;
+            this.Tb_OutstandingBalance.Text = "0";
+            this.Tb_OutstandingBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.onlyInt5);
-            this.groupBox2.Controls.Add(this.TextBox_Note);
-            this.groupBox2.Controls.Add(this.DT_Out);
-            this.groupBox2.Controls.Add(this.DT_In);
+            this.groupBox2.Controls.Add(this.Tb_UnitPrice);
+            this.groupBox2.Controls.Add(this.Tb_Note);
+            this.groupBox2.Controls.Add(this.Dt_Out);
+            this.groupBox2.Controls.Add(this.Dt_In);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.Add_btn);
+            this.groupBox2.Controls.Add(this.Btn_AddSave);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.CB_Service);
-            this.groupBox2.Controls.Add(this.Label_OrderNumber);
+            this.groupBox2.Controls.Add(this.Cb_Service);
+            this.groupBox2.Controls.Add(this.Lbl_OrderNumber);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.panel4);
-            this.groupBox2.Controls.Add(this.DUD_Quantitity);
+            this.groupBox2.Controls.Add(this.Dud_Quantitity);
             this.groupBox2.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(30, 312);
             this.groupBox2.Name = "groupBox2";
@@ -385,30 +385,51 @@ namespace GPSys_Desk_APP.Views
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pedido(s)";
             // 
-            // TextBox_Note
+            // label11
             // 
-            this.TextBox_Note.Font = new System.Drawing.Font("Gotham", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_Note.Location = new System.Drawing.Point(30, 260);
-            this.TextBox_Note.Multiline = true;
-            this.TextBox_Note.Name = "TextBox_Note";
-            this.TextBox_Note.Size = new System.Drawing.Size(731, 146);
-            this.TextBox_Note.TabIndex = 65;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(626, 179);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(30, 19);
+            this.label11.TabIndex = 75;
+            this.label11.Text = "Mt";
             // 
-            // DT_Out
+            // Tb_UnitPrice
             // 
-            this.DT_Out.Font = new System.Drawing.Font("Gotham", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DT_Out.Location = new System.Drawing.Point(504, 104);
-            this.DT_Out.Name = "DT_Out";
-            this.DT_Out.Size = new System.Drawing.Size(257, 25);
-            this.DT_Out.TabIndex = 4;
+            this.Tb_UnitPrice.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_UnitPrice.Location = new System.Drawing.Point(493, 175);
+            this.Tb_UnitPrice.Name = "Tb_UnitPrice";
+            this.Tb_UnitPrice.ReadOnly = true;
+            this.Tb_UnitPrice.Size = new System.Drawing.Size(131, 27);
+            this.Tb_UnitPrice.TabIndex = 39;
+            this.Tb_UnitPrice.Text = "0";
+            this.Tb_UnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // DT_In
+            // Tb_Note
             // 
-            this.DT_In.Font = new System.Drawing.Font("Gotham", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DT_In.Location = new System.Drawing.Point(504, 73);
-            this.DT_In.Name = "DT_In";
-            this.DT_In.Size = new System.Drawing.Size(257, 25);
-            this.DT_In.TabIndex = 3;
+            this.Tb_Note.Font = new System.Drawing.Font("Gotham", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Note.Location = new System.Drawing.Point(30, 260);
+            this.Tb_Note.Multiline = true;
+            this.Tb_Note.Name = "Tb_Note";
+            this.Tb_Note.Size = new System.Drawing.Size(731, 146);
+            this.Tb_Note.TabIndex = 40;
+            // 
+            // Dt_Out
+            // 
+            this.Dt_Out.Font = new System.Drawing.Font("Gotham", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dt_Out.Location = new System.Drawing.Point(504, 104);
+            this.Dt_Out.Name = "Dt_Out";
+            this.Dt_Out.Size = new System.Drawing.Size(257, 25);
+            this.Dt_Out.TabIndex = 36;
+            // 
+            // Dt_In
+            // 
+            this.Dt_In.Font = new System.Drawing.Font("Gotham", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dt_In.Location = new System.Drawing.Point(504, 73);
+            this.Dt_In.Name = "Dt_In";
+            this.Dt_In.Size = new System.Drawing.Size(257, 25);
+            this.Dt_In.TabIndex = 35;
             // 
             // label14
             // 
@@ -430,6 +451,16 @@ namespace GPSys_Desk_APP.Views
             this.label13.TabIndex = 56;
             this.label13.Text = "Entrada:";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(338, 152);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(106, 19);
+            this.label12.TabIndex = 53;
+            this.label12.Text = "Quantidade:";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -439,6 +470,29 @@ namespace GPSys_Desk_APP.Views
             this.label15.Size = new System.Drawing.Size(161, 19);
             this.label15.TabIndex = 42;
             this.label15.Text = "Preço de execução:";
+            // 
+            // Btn_AddSave
+            // 
+            this.Btn_AddSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSave.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSave.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_AddSave.BorderRadius = 10;
+            this.Btn_AddSave.BorderSize = 0;
+            this.Btn_AddSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_AddSave.FlatAppearance.BorderSize = 0;
+            this.Btn_AddSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_AddSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_AddSave.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_AddSave.ForeColor = System.Drawing.Color.White;
+            this.Btn_AddSave.Location = new System.Drawing.Point(592, 438);
+            this.Btn_AddSave.Name = "Btn_AddSave";
+            this.Btn_AddSave.Size = new System.Drawing.Size(169, 37);
+            this.Btn_AddSave.TabIndex = 41;
+            this.Btn_AddSave.Text = "Adicionar / Salvar";
+            this.Btn_AddSave.TextColor = System.Drawing.Color.White;
+            this.Btn_AddSave.UseVisualStyleBackColor = false;
+            this.Btn_AddSave.Click += new System.EventHandler(this.Btn_AddSave_Click);
             // 
             // label28
             // 
@@ -450,25 +504,40 @@ namespace GPSys_Desk_APP.Views
             this.label28.TabIndex = 41;
             this.label28.Text = "NOTA:";
             // 
-            // classEntidadeBindingSource
+            // label16
             // 
-            this.classEntidadeBindingSource.DataSource = typeof(CamadaDeEntidades.ClassEntidade);
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(33, 153);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(70, 19);
+            this.label16.TabIndex = 40;
+            this.label16.Text = "Serviço:";
             // 
-            // classNegocioBindingSource
+            // Cb_Service
             // 
-            this.classNegocioBindingSource.DataSource = typeof(CamadaDeNegocio.ClassNegocio);
+            this.Cb_Service.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Cb_Service.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Cb_Service.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.classEntidadeBindingSource, "Cod_Serv", true));
+            this.Cb_Service.DataSource = this.classNegocioBindingSource;
+            this.Cb_Service.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cb_Service.FormattingEnabled = true;
+            this.Cb_Service.Location = new System.Drawing.Point(30, 173);
+            this.Cb_Service.Name = "Cb_Service";
+            this.Cb_Service.Size = new System.Drawing.Size(282, 27);
+            this.Cb_Service.TabIndex = 37;
             // 
-            // Label_OrderNumber
+            // Lbl_OrderNumber
             // 
-            this.Label_OrderNumber.AutoSize = true;
-            this.Label_OrderNumber.BackColor = System.Drawing.Color.Transparent;
-            this.Label_OrderNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_OrderNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Label_OrderNumber.Location = new System.Drawing.Point(681, 34);
-            this.Label_OrderNumber.Name = "Label_OrderNumber";
-            this.Label_OrderNumber.Size = new System.Drawing.Size(54, 23);
-            this.Label_OrderNumber.TabIndex = 39;
-            this.Label_OrderNumber.Text = "1001";
+            this.Lbl_OrderNumber.AutoSize = true;
+            this.Lbl_OrderNumber.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_OrderNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_OrderNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Lbl_OrderNumber.Location = new System.Drawing.Point(681, 34);
+            this.Lbl_OrderNumber.Name = "Lbl_OrderNumber";
+            this.Lbl_OrderNumber.Size = new System.Drawing.Size(54, 23);
+            this.Lbl_OrderNumber.TabIndex = 39;
+            this.Lbl_OrderNumber.Text = "1001";
             // 
             // label19
             // 
@@ -489,108 +558,198 @@ namespace GPSys_Desk_APP.Views
             this.panel4.Size = new System.Drawing.Size(767, 2);
             this.panel4.TabIndex = 46;
             // 
-            // groupBox1
+            // Dud_Quantitity
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.TB_ClientNUIT);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.CB_ClientCity);
-            this.groupBox1.Controls.Add(this.TB_ClientEmail);
-            this.groupBox1.Controls.Add(this.TB_ClientAddress);
-            this.groupBox1.Controls.Add(this.TB_ClientName);
-            this.groupBox1.Controls.Add(this.Label_ClientNumber);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.panel5);
-            this.groupBox1.Controls.Add(this.TB_ClientContactNumber);
-            this.groupBox1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(30, 25);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(775, 244);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cliente";
+            this.Dud_Quantitity.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dud_Quantitity.Location = new System.Drawing.Point(335, 174);
+            this.Dud_Quantitity.Name = "Dud_Quantitity";
+            this.Dud_Quantitity.Size = new System.Drawing.Size(135, 27);
+            this.Dud_Quantitity.TabIndex = 38;
+            this.Dud_Quantitity.Text = "1";
             // 
-            // TB_ClientNUIT
+            // Btn_CompleteOrder
             // 
-            this.TB_ClientNUIT.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_ClientNUIT.Location = new System.Drawing.Point(281, 123);
-            this.TB_ClientNUIT.Mask = "000 000 000";
-            this.TB_ClientNUIT.Name = "TB_ClientNUIT";
-            this.TB_ClientNUIT.Size = new System.Drawing.Size(230, 27);
-            this.TB_ClientNUIT.TabIndex = 30;
+            this.Btn_CompleteOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_CompleteOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_CompleteOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_CompleteOrder.BorderRadius = 10;
+            this.Btn_CompleteOrder.BorderSize = 0;
+            this.Btn_CompleteOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CompleteOrder.FlatAppearance.BorderSize = 0;
+            this.Btn_CompleteOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_CompleteOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_CompleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CompleteOrder.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CompleteOrder.ForeColor = System.Drawing.Color.White;
+            this.Btn_CompleteOrder.Location = new System.Drawing.Point(705, 1042);
+            this.Btn_CompleteOrder.Name = "Btn_CompleteOrder";
+            this.Btn_CompleteOrder.Size = new System.Drawing.Size(100, 37);
+            this.Btn_CompleteOrder.TabIndex = 39;
+            this.Btn_CompleteOrder.Text = "Finalizar";
+            this.Btn_CompleteOrder.TextColor = System.Drawing.Color.White;
+            this.Btn_CompleteOrder.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // Btn_ClearWishList
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(534, 168);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 19);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Contacto:";
+            this.Btn_ClearWishList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ClearWishList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ClearWishList.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_ClearWishList.BorderRadius = 10;
+            this.Btn_ClearWishList.BorderSize = 0;
+            this.Btn_ClearWishList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ClearWishList.FlatAppearance.BorderSize = 0;
+            this.Btn_ClearWishList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_ClearWishList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ClearWishList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ClearWishList.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ClearWishList.ForeColor = System.Drawing.Color.White;
+            this.Btn_ClearWishList.Location = new System.Drawing.Point(705, 996);
+            this.Btn_ClearWishList.Name = "Btn_ClearWishList";
+            this.Btn_ClearWishList.Size = new System.Drawing.Size(100, 37);
+            this.Btn_ClearWishList.TabIndex = 38;
+            this.Btn_ClearWishList.Text = "Limpar";
+            this.Btn_ClearWishList.TextColor = System.Drawing.Color.White;
+            this.Btn_ClearWishList.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // Btn_RemoveFromWishList
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 19);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Nome:";
+            this.Btn_RemoveFromWishList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_RemoveFromWishList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_RemoveFromWishList.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_RemoveFromWishList.BorderRadius = 10;
+            this.Btn_RemoveFromWishList.BorderSize = 0;
+            this.Btn_RemoveFromWishList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_RemoveFromWishList.FlatAppearance.BorderSize = 0;
+            this.Btn_RemoveFromWishList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_RemoveFromWishList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_RemoveFromWishList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_RemoveFromWishList.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_RemoveFromWishList.ForeColor = System.Drawing.Color.White;
+            this.Btn_RemoveFromWishList.Location = new System.Drawing.Point(705, 950);
+            this.Btn_RemoveFromWishList.Name = "Btn_RemoveFromWishList";
+            this.Btn_RemoveFromWishList.Size = new System.Drawing.Size(100, 37);
+            this.Btn_RemoveFromWishList.TabIndex = 38;
+            this.Btn_RemoveFromWishList.Text = "Remover";
+            this.Btn_RemoveFromWishList.TextColor = System.Drawing.Color.White;
+            this.Btn_RemoveFromWishList.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // Btn_CancelOrder
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(284, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 19);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "NUIT:";
+            this.Btn_CancelOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_CancelOrder.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_CancelOrder.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_CancelOrder.BorderRadius = 10;
+            this.Btn_CancelOrder.BorderSize = 0;
+            this.Btn_CancelOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_CancelOrder.FlatAppearance.BorderSize = 0;
+            this.Btn_CancelOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_CancelOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_CancelOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_CancelOrder.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CancelOrder.ForeColor = System.Drawing.Color.White;
+            this.Btn_CancelOrder.Location = new System.Drawing.Point(705, 1088);
+            this.Btn_CancelOrder.Name = "Btn_CancelOrder";
+            this.Btn_CancelOrder.Size = new System.Drawing.Size(100, 37);
+            this.Btn_CancelOrder.TabIndex = 40;
+            this.Btn_CancelOrder.Text = "Cancelar";
+            this.Btn_CancelOrder.TextColor = System.Drawing.Color.White;
+            this.Btn_CancelOrder.UseVisualStyleBackColor = false;
             // 
-            // label10
+            // Btn_UpdateWishList
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(284, 168);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 19);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Cidade:";
+            this.Btn_UpdateWishList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_UpdateWishList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_UpdateWishList.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_UpdateWishList.BorderRadius = 10;
+            this.Btn_UpdateWishList.BorderSize = 0;
+            this.Btn_UpdateWishList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_UpdateWishList.FlatAppearance.BorderSize = 0;
+            this.Btn_UpdateWishList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_UpdateWishList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_UpdateWishList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_UpdateWishList.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_UpdateWishList.ForeColor = System.Drawing.Color.White;
+            this.Btn_UpdateWishList.Location = new System.Drawing.Point(705, 904);
+            this.Btn_UpdateWishList.Name = "Btn_UpdateWishList";
+            this.Btn_UpdateWishList.Size = new System.Drawing.Size(100, 37);
+            this.Btn_UpdateWishList.TabIndex = 37;
+            this.Btn_UpdateWishList.Text = "Actualizar";
+            this.Btn_UpdateWishList.TextColor = System.Drawing.Color.White;
+            this.Btn_UpdateWishList.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // Tb_ClientContactNumber
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(534, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 19);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "E-mail:";
+            this.Tb_ClientContactNumber.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientContactNumber.Location = new System.Drawing.Point(531, 190);
+            this.Tb_ClientContactNumber.Mask = "(+258) 00 000 0000";
+            this.Tb_ClientContactNumber.Name = "Tb_ClientContactNumber";
+            this.Tb_ClientContactNumber.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientContactNumber.TabIndex = 34;
             // 
-            // label8
+            // panel5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(33, 168);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 19);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Endereço:";
+            this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Location = new System.Drawing.Point(4, 61);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(767, 2);
+            this.panel5.TabIndex = 35;
             // 
-            // CB_ClientCity
+            // label2
             // 
-            this.CB_ClientCity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.CB_ClientCity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CB_ClientCity.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CB_ClientCity.FormattingEnabled = true;
-            this.CB_ClientCity.Items.AddRange(new object[] {
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(593, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Número:";
+            // 
+            // Lbl_ClientNumber
+            // 
+            this.Lbl_ClientNumber.AutoSize = true;
+            this.Lbl_ClientNumber.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_ClientNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ClientNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Lbl_ClientNumber.Location = new System.Drawing.Point(683, 34);
+            this.Lbl_ClientNumber.Name = "Lbl_ClientNumber";
+            this.Lbl_ClientNumber.Size = new System.Drawing.Size(32, 23);
+            this.Lbl_ClientNumber.TabIndex = 1;
+            this.Lbl_ClientNumber.Text = "01";
+            // 
+            // Tb_ClientName
+            // 
+            this.Tb_ClientName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Tb_ClientName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.Tb_ClientName.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientName.Location = new System.Drawing.Point(30, 123);
+            this.Tb_ClientName.Name = "Tb_ClientName";
+            this.Tb_ClientName.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientName.TabIndex = 29;
+            // 
+            // Tb_ClientAddress
+            // 
+            this.Tb_ClientAddress.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientAddress.Location = new System.Drawing.Point(30, 190);
+            this.Tb_ClientAddress.Name = "Tb_ClientAddress";
+            this.Tb_ClientAddress.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientAddress.TabIndex = 32;
+            // 
+            // Tb_ClientEmail
+            // 
+            this.Tb_ClientEmail.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientEmail.Location = new System.Drawing.Point(531, 123);
+            this.Tb_ClientEmail.Name = "Tb_ClientEmail";
+            this.Tb_ClientEmail.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientEmail.TabIndex = 31;
+            // 
+            // Cb_ClientCity
+            // 
+            this.Cb_ClientCity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Cb_ClientCity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Cb_ClientCity.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cb_ClientCity.FormattingEnabled = true;
+            this.Cb_ClientCity.Items.AddRange(new object[] {
             "Beira - Sofala",
             "Chimoio - Manica",
             "Dondo - Sofala",
@@ -606,273 +765,105 @@ namespace GPSys_Desk_APP.Views
             "Quelimane - Zambezia",
             "Tete - Tete",
             "Xai - Xai - Gaza"});
-            this.CB_ClientCity.Location = new System.Drawing.Point(281, 190);
-            this.CB_ClientCity.Name = "CB_ClientCity";
-            this.CB_ClientCity.Size = new System.Drawing.Size(230, 27);
-            this.CB_ClientCity.TabIndex = 33;
+            this.Cb_ClientCity.Location = new System.Drawing.Point(281, 190);
+            this.Cb_ClientCity.Name = "Cb_ClientCity";
+            this.Cb_ClientCity.Size = new System.Drawing.Size(230, 27);
+            this.Cb_ClientCity.TabIndex = 33;
             // 
-            // TB_ClientEmail
+            // label8
             // 
-            this.TB_ClientEmail.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_ClientEmail.Location = new System.Drawing.Point(531, 123);
-            this.TB_ClientEmail.Name = "TB_ClientEmail";
-            this.TB_ClientEmail.Size = new System.Drawing.Size(230, 27);
-            this.TB_ClientEmail.TabIndex = 31;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(33, 168);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 19);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Endereço:";
             // 
-            // TB_ClientAddress
+            // label9
             // 
-            this.TB_ClientAddress.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_ClientAddress.Location = new System.Drawing.Point(30, 190);
-            this.TB_ClientAddress.Name = "TB_ClientAddress";
-            this.TB_ClientAddress.Size = new System.Drawing.Size(230, 27);
-            this.TB_ClientAddress.TabIndex = 32;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(534, 101);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 19);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "E-mail:";
             // 
-            // TB_ClientName
+            // label10
             // 
-            this.TB_ClientName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.TB_ClientName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.TB_ClientName.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_ClientName.Location = new System.Drawing.Point(30, 123);
-            this.TB_ClientName.Name = "TB_ClientName";
-            this.TB_ClientName.Size = new System.Drawing.Size(230, 27);
-            this.TB_ClientName.TabIndex = 29;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(284, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 19);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Cidade:";
             // 
-            // Label_ClientNumber
+            // label6
             // 
-            this.Label_ClientNumber.AutoSize = true;
-            this.Label_ClientNumber.BackColor = System.Drawing.Color.Transparent;
-            this.Label_ClientNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_ClientNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Label_ClientNumber.Location = new System.Drawing.Point(681, 31);
-            this.Label_ClientNumber.Name = "Label_ClientNumber";
-            this.Label_ClientNumber.Size = new System.Drawing.Size(32, 23);
-            this.Label_ClientNumber.TabIndex = 1;
-            this.Label_ClientNumber.Text = "01";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(284, 101);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 19);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "NUIT:";
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(591, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Número:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 19);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Nome:";
             // 
-            // panel5
+            // label7
             // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Location = new System.Drawing.Point(4, 58);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(767, 2);
-            this.panel5.TabIndex = 35;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(534, 168);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 19);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Contacto:";
             // 
-            // TB_ClientContactNumber
+            // Tb_ClientNUIT
             // 
-            this.TB_ClientContactNumber.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_ClientContactNumber.Location = new System.Drawing.Point(531, 190);
-            this.TB_ClientContactNumber.Mask = "(+258) 000 000 000";
-            this.TB_ClientContactNumber.Name = "TB_ClientContactNumber";
-            this.TB_ClientContactNumber.Size = new System.Drawing.Size(230, 27);
-            this.TB_ClientContactNumber.TabIndex = 34;
+            this.Tb_ClientNUIT.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientNUIT.Location = new System.Drawing.Point(281, 123);
+            this.Tb_ClientNUIT.Mask = "000 000 000";
+            this.Tb_ClientNUIT.Name = "Tb_ClientNUIT";
+            this.Tb_ClientNUIT.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientNUIT.TabIndex = 30;
             // 
-            // Cancel_btn
+            // groupBox1
             // 
-            this.Cancel_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Cancel_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Cancel_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Cancel_btn.BorderRadius = 10;
-            this.Cancel_btn.BorderSize = 0;
-            this.Cancel_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Cancel_btn.FlatAppearance.BorderSize = 0;
-            this.Cancel_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Cancel_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Cancel_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Cancel_btn.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancel_btn.ForeColor = System.Drawing.Color.White;
-            this.Cancel_btn.Location = new System.Drawing.Point(705, 1039);
-            this.Cancel_btn.Name = "Cancel_btn";
-            this.Cancel_btn.Size = new System.Drawing.Size(100, 34);
-            this.Cancel_btn.TabIndex = 39;
-            this.Cancel_btn.Text = "Finalizar";
-            this.Cancel_btn.TextColor = System.Drawing.Color.White;
-            this.Cancel_btn.UseVisualStyleBackColor = false;
-            // 
-            // buttons3
-            // 
-            this.buttons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons3.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons3.BorderRadius = 10;
-            this.buttons3.BorderSize = 0;
-            this.buttons3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons3.FlatAppearance.BorderSize = 0;
-            this.buttons3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons3.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttons3.ForeColor = System.Drawing.Color.White;
-            this.buttons3.Location = new System.Drawing.Point(705, 994);
-            this.buttons3.Name = "buttons3";
-            this.buttons3.Size = new System.Drawing.Size(100, 34);
-            this.buttons3.TabIndex = 38;
-            this.buttons3.Text = "Limpar";
-            this.buttons3.TextColor = System.Drawing.Color.White;
-            this.buttons3.UseVisualStyleBackColor = false;
-            // 
-            // buttons1
-            // 
-            this.buttons1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons1.BorderRadius = 10;
-            this.buttons1.BorderSize = 0;
-            this.buttons1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons1.FlatAppearance.BorderSize = 0;
-            this.buttons1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons1.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttons1.ForeColor = System.Drawing.Color.White;
-            this.buttons1.Location = new System.Drawing.Point(705, 949);
-            this.buttons1.Name = "buttons1";
-            this.buttons1.Size = new System.Drawing.Size(100, 34);
-            this.buttons1.TabIndex = 38;
-            this.buttons1.Text = "Remover";
-            this.buttons1.TextColor = System.Drawing.Color.White;
-            this.buttons1.UseVisualStyleBackColor = false;
-            // 
-            // Done_btn
-            // 
-            this.Done_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Done_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Done_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Done_btn.BorderRadius = 10;
-            this.Done_btn.BorderSize = 0;
-            this.Done_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Done_btn.FlatAppearance.BorderSize = 0;
-            this.Done_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Done_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Done_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Done_btn.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Done_btn.ForeColor = System.Drawing.Color.White;
-            this.Done_btn.Location = new System.Drawing.Point(705, 1084);
-            this.Done_btn.Name = "Done_btn";
-            this.Done_btn.Size = new System.Drawing.Size(100, 34);
-            this.Done_btn.TabIndex = 40;
-            this.Done_btn.Text = "Cancelar";
-            this.Done_btn.TextColor = System.Drawing.Color.White;
-            this.Done_btn.UseVisualStyleBackColor = false;
-            // 
-            // buttons2
-            // 
-            this.buttons2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons2.BorderRadius = 10;
-            this.buttons2.BorderSize = 0;
-            this.buttons2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons2.FlatAppearance.BorderSize = 0;
-            this.buttons2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons2.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttons2.ForeColor = System.Drawing.Color.White;
-            this.buttons2.Location = new System.Drawing.Point(705, 904);
-            this.buttons2.Name = "buttons2";
-            this.buttons2.Size = new System.Drawing.Size(100, 34);
-            this.buttons2.TabIndex = 37;
-            this.buttons2.Text = "Actualizar";
-            this.buttons2.TextColor = System.Drawing.Color.White;
-            this.buttons2.UseVisualStyleBackColor = false;
-            this.buttons2.Click += new System.EventHandler(this.Add_btn_Click);
-            // 
-            // Add_btn
-            // 
-            this.Add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Add_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Add_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Add_btn.BorderRadius = 10;
-            this.Add_btn.BorderSize = 0;
-            this.Add_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_btn.FlatAppearance.BorderSize = 0;
-            this.Add_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Add_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_btn.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_btn.ForeColor = System.Drawing.Color.White;
-            this.Add_btn.Location = new System.Drawing.Point(592, 438);
-            this.Add_btn.Name = "Add_btn";
-            this.Add_btn.Size = new System.Drawing.Size(169, 34);
-            this.Add_btn.TabIndex = 37;
-            this.Add_btn.Text = "Adicionar / Salvar";
-            this.Add_btn.TextColor = System.Drawing.Color.White;
-            this.Add_btn.UseVisualStyleBackColor = false;
-            this.Add_btn.Click += new System.EventHandler(this.Add_btn_Click);
-            // 
-            // DUD_Quantitity
-            // 
-            this.DUD_Quantitity.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DUD_Quantitity.Location = new System.Drawing.Point(335, 174);
-            this.DUD_Quantitity.Name = "DUD_Quantitity";
-            this.DUD_Quantitity.Size = new System.Drawing.Size(135, 27);
-            this.DUD_Quantitity.TabIndex = 62;
-            this.DUD_Quantitity.Text = "1";
-            // 
-            // CB_Service
-            // 
-            this.CB_Service.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.CB_Service.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.CB_Service.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.classEntidadeBindingSource, "Cod_Serv", true));
-            this.CB_Service.DataSource = this.classNegocioBindingSource;
-            this.CB_Service.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CB_Service.FormattingEnabled = true;
-            this.CB_Service.Location = new System.Drawing.Point(30, 173);
-            this.CB_Service.Name = "CB_Service";
-            this.CB_Service.Size = new System.Drawing.Size(282, 27);
-            this.CB_Service.TabIndex = 61;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(33, 153);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(70, 19);
-            this.label16.TabIndex = 40;
-            this.label16.Text = "Serviço:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(338, 152);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(106, 19);
-            this.label12.TabIndex = 53;
-            this.label12.Text = "Quantidade:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(626, 179);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(30, 19);
-            this.label11.TabIndex = 75;
-            this.label11.Text = "Mt";
-            // 
-            // onlyInt5
-            // 
-            this.onlyInt5.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyInt5.Location = new System.Drawing.Point(493, 175);
-            this.onlyInt5.Name = "onlyInt5";
-            this.onlyInt5.ReadOnly = true;
-            this.onlyInt5.Size = new System.Drawing.Size(131, 27);
-            this.onlyInt5.TabIndex = 73;
-            this.onlyInt5.Text = "0";
-            this.onlyInt5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.Tb_ClientNUIT);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.Cb_ClientCity);
+            this.groupBox1.Controls.Add(this.Tb_ClientEmail);
+            this.groupBox1.Controls.Add(this.Tb_ClientAddress);
+            this.groupBox1.Controls.Add(this.Tb_ClientName);
+            this.groupBox1.Controls.Add(this.Lbl_ClientNumber);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.panel5);
+            this.groupBox1.Controls.Add(this.Tb_ClientContactNumber);
+            this.groupBox1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(30, 25);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(775, 244);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cliente";
             // 
             // NewOrderForm
             // 
@@ -907,63 +898,63 @@ namespace GPSys_Desk_APP.Views
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private Controls.Buttons Cancel_btn;
-        private Controls.Buttons Done_btn;
-        private Controls.Buttons Add_btn;
+        private Controls.Buttons Btn_CompleteOrder;
+        private Controls.Buttons Btn_CancelOrder;
+        private Controls.Buttons Btn_AddSave;
         private System.Windows.Forms.BindingSource classEntidadeBindingSource;
         private System.Windows.Forms.BindingSource classNegocioBindingSource;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox CB_ClientCity;
-        private System.Windows.Forms.TextBox TB_ClientEmail;
-        private System.Windows.Forms.TextBox TB_ClientAddress;
-        private System.Windows.Forms.TextBox TB_ClientName;
-        private System.Windows.Forms.Label Label_ClientNumber;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView DataGridView;
-        private System.Windows.Forms.Label label1;
-        private Controls.Buttons buttons1;
+        private Controls.Buttons Btn_RemoveFromWishList;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox TextBox_Note;
-        private System.Windows.Forms.DateTimePicker DT_Out;
-        private System.Windows.Forms.DateTimePicker DT_In;
+        private System.Windows.Forms.TextBox Tb_Note;
+        private System.Windows.Forms.DateTimePicker Dt_Out;
+        private System.Windows.Forms.DateTimePicker Dt_In;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label Label_OrderNumber;
+        private System.Windows.Forms.Label Lbl_OrderNumber;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.MaskedTextBox TB_ClientContactNumber;
-        private System.Windows.Forms.MaskedTextBox TB_ClientNUIT;
-        private Controls.Buttons buttons2;
-        private Controls.OnlyInt onlyInt3;
+        private Controls.Buttons Btn_UpdateWishList;
+        private Controls.OnlyInt Tb_Discount;
         private System.Windows.Forms.Label label4;
-        private Controls.OnlyInt onlyInt2;
+        private Controls.OnlyInt Tb_AmountPaid;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel6;
-        private Controls.Buttons buttons3;
+        private Controls.Buttons Btn_ClearWishList;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label17;
-        private Controls.OnlyInt onlyInt1;
+        private Controls.OnlyInt Tb_AmoutToPay;
         private System.Windows.Forms.Label label18;
-        private Controls.OnlyInt onlyInt4;
+        private Controls.OnlyInt Tb_OutstandingBalance;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox CB_Service;
-        private System.Windows.Forms.DomainUpDown DUD_Quantitity;
+        private System.Windows.Forms.ComboBox Cb_Service;
+        private System.Windows.Forms.DomainUpDown Dud_Quantitity;
         private System.Windows.Forms.Label label11;
-        private Controls.OnlyInt onlyInt5;
+        private Controls.OnlyInt Tb_UnitPrice;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.MaskedTextBox Tb_ClientNUIT;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox Cb_ClientCity;
+        private System.Windows.Forms.TextBox Tb_ClientEmail;
+        private System.Windows.Forms.TextBox Tb_ClientAddress;
+        private System.Windows.Forms.TextBox Tb_ClientName;
+        private System.Windows.Forms.Label Lbl_ClientNumber;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.MaskedTextBox Tb_ClientContactNumber;
     }
 }

@@ -34,26 +34,53 @@ namespace GPSys_Desk_APP.Views
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServiceUserControlForm));
-            this.DataGridView = new System.Windows.Forms.DataGridView();
-            this.buttons1 = new GPSys_Desk_APP.Controls.Buttons();
-            this.buttons2 = new GPSys_Desk_APP.Controls.Buttons();
-            this.Add_btn = new GPSys_Desk_APP.Controls.Buttons();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.onlyInt1 = new GPSys_Desk_APP.Controls.OnlyInt();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TB_ClientName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.buttons3 = new GPSys_Desk_APP.Controls.Buttons();
+            this.DataGridView = new System.Windows.Forms.DataGridView();
+            this.Btn_DeleteService = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_AddSaveService = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_UpdateService = new GPSys_Desk_APP.Controls.Buttons();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Btn_ClearCamps = new GPSys_Desk_APP.Controls.Buttons();
+            this.Tb_ServicePrice = new GPSys_Desk_APP.Controls.OnlyInt();
+            this.Tb_ServiceCode = new System.Windows.Forms.MaskedTextBox();
+            this.Tb_ServiceName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Tb_ServiceDescription = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.Btn_DeleteService);
+            this.panel1.Controls.Add(this.Btn_UpdateService);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1135, 696);
+            this.panel1.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.DataGridView);
+            this.groupBox1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(71, 337);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(865, 280);
+            this.groupBox1.TabIndex = 87;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Lista de Serviços";
             // 
             // DataGridView
             // 
@@ -103,107 +130,100 @@ namespace GPSys_Desk_APP.Views
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.DataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView.Size = new System.Drawing.Size(817, 199);
+            this.DataGridView.Size = new System.Drawing.Size(810, 199);
             this.DataGridView.TabIndex = 75;
             // 
-            // buttons1
+            // Btn_DeleteService
             // 
-            this.buttons1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttons1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons1.BorderRadius = 10;
-            this.buttons1.BorderSize = 0;
-            this.buttons1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons1.FlatAppearance.BorderSize = 0;
-            this.buttons1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons1.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttons1.ForeColor = System.Drawing.Color.White;
-            this.buttons1.Location = new System.Drawing.Point(960, 528);
-            this.buttons1.Name = "buttons1";
-            this.buttons1.Size = new System.Drawing.Size(100, 34);
-            this.buttons1.TabIndex = 79;
-            this.buttons1.Text = "Excluir";
-            this.buttons1.TextColor = System.Drawing.Color.White;
-            this.buttons1.UseVisualStyleBackColor = false;
+            this.Btn_DeleteService.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_DeleteService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_DeleteService.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_DeleteService.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_DeleteService.BorderRadius = 10;
+            this.Btn_DeleteService.BorderSize = 0;
+            this.Btn_DeleteService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_DeleteService.FlatAppearance.BorderSize = 0;
+            this.Btn_DeleteService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_DeleteService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_DeleteService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_DeleteService.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_DeleteService.ForeColor = System.Drawing.Color.White;
+            this.Btn_DeleteService.Location = new System.Drawing.Point(956, 437);
+            this.Btn_DeleteService.Name = "Btn_DeleteService";
+            this.Btn_DeleteService.Size = new System.Drawing.Size(104, 37);
+            this.Btn_DeleteService.TabIndex = 8;
+            this.Btn_DeleteService.Text = "Excluir";
+            this.Btn_DeleteService.TextColor = System.Drawing.Color.White;
+            this.Btn_DeleteService.UseVisualStyleBackColor = false;
+            this.Btn_DeleteService.Click += new System.EventHandler(this.Btn_DeleteService_Click);
             // 
-            // buttons2
+            // Btn_AddSaveService
             // 
-            this.buttons2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttons2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons2.BorderRadius = 10;
-            this.buttons2.BorderSize = 0;
-            this.buttons2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons2.FlatAppearance.BorderSize = 0;
-            this.buttons2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons2.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttons2.ForeColor = System.Drawing.Color.White;
-            this.buttons2.Location = new System.Drawing.Point(960, 484);
-            this.buttons2.Name = "buttons2";
-            this.buttons2.Size = new System.Drawing.Size(100, 34);
-            this.buttons2.TabIndex = 76;
-            this.buttons2.Text = "Actualizar";
-            this.buttons2.TextColor = System.Drawing.Color.White;
-            this.buttons2.UseVisualStyleBackColor = false;
+            this.Btn_AddSaveService.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_AddSaveService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSaveService.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSaveService.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_AddSaveService.BorderRadius = 10;
+            this.Btn_AddSaveService.BorderSize = 0;
+            this.Btn_AddSaveService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_AddSaveService.FlatAppearance.BorderSize = 0;
+            this.Btn_AddSaveService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_AddSaveService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSaveService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_AddSaveService.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_AddSaveService.ForeColor = System.Drawing.Color.White;
+            this.Btn_AddSaveService.Location = new System.Drawing.Point(641, 189);
+            this.Btn_AddSaveService.Name = "Btn_AddSaveService";
+            this.Btn_AddSaveService.Size = new System.Drawing.Size(161, 37);
+            this.Btn_AddSaveService.TabIndex = 5;
+            this.Btn_AddSaveService.Text = "Adicionar / Salvar";
+            this.Btn_AddSaveService.TextColor = System.Drawing.Color.White;
+            this.Btn_AddSaveService.UseVisualStyleBackColor = false;
             // 
-            // Add_btn
+            // Btn_UpdateService
             // 
-            this.Add_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Add_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Add_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.Add_btn.BorderRadius = 10;
-            this.Add_btn.BorderSize = 0;
-            this.Add_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Add_btn.FlatAppearance.BorderSize = 0;
-            this.Add_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Add_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Add_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_btn.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_btn.ForeColor = System.Drawing.Color.White;
-            this.Add_btn.Location = new System.Drawing.Point(960, 440);
-            this.Add_btn.Name = "Add_btn";
-            this.Add_btn.Size = new System.Drawing.Size(100, 34);
-            this.Add_btn.TabIndex = 77;
-            this.Add_btn.Text = "Adicionar";
-            this.Add_btn.TextColor = System.Drawing.Color.White;
-            this.Add_btn.UseVisualStyleBackColor = false;
+            this.Btn_UpdateService.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_UpdateService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_UpdateService.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_UpdateService.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_UpdateService.BorderRadius = 10;
+            this.Btn_UpdateService.BorderSize = 0;
+            this.Btn_UpdateService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_UpdateService.FlatAppearance.BorderSize = 0;
+            this.Btn_UpdateService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_UpdateService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_UpdateService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_UpdateService.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_UpdateService.ForeColor = System.Drawing.Color.White;
+            this.Btn_UpdateService.Location = new System.Drawing.Point(956, 390);
+            this.Btn_UpdateService.Name = "Btn_UpdateService";
+            this.Btn_UpdateService.Size = new System.Drawing.Size(104, 37);
+            this.Btn_UpdateService.TabIndex = 7;
+            this.Btn_UpdateService.Text = "Actualizar";
+            this.Btn_UpdateService.TextColor = System.Drawing.Color.White;
+            this.Btn_UpdateService.UseVisualStyleBackColor = false;
             // 
-            // groupBox1
+            // groupBox2
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.DataGridView);
-            this.groupBox1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(71, 352);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(872, 280);
-            this.groupBox1.TabIndex = 82;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Lista de Serviços";
-            // 
-            // onlyInt1
-            // 
-            this.onlyInt1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onlyInt1.Location = new System.Drawing.Point(32, 196);
-            this.onlyInt1.Name = "onlyInt1";
-            this.onlyInt1.Size = new System.Drawing.Size(280, 27);
-            this.onlyInt1.TabIndex = 74;
-            this.onlyInt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(32, 64);
-            this.maskedTextBox1.Mask = "GP-S000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(315, 27);
-            this.maskedTextBox1.TabIndex = 32;
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.Btn_ClearCamps);
+            this.groupBox2.Controls.Add(this.Btn_AddSaveService);
+            this.groupBox2.Controls.Add(this.Tb_ServicePrice);
+            this.groupBox2.Controls.Add(this.Tb_ServiceCode);
+            this.groupBox2.Controls.Add(this.Tb_ServiceName);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.Tb_ServiceDescription);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(71, 44);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(989, 251);
+            this.groupBox2.TabIndex = 88;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Serviço";
             // 
             // label1
             // 
@@ -216,37 +236,55 @@ namespace GPSys_Desk_APP.Views
             this.label1.TabIndex = 30;
             this.label1.Text = "Código de serviço:";
             // 
-            // TB_ClientName
+            // Btn_ClearCamps
             // 
-            this.TB_ClientName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.TB_ClientName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.TB_ClientName.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_ClientName.Location = new System.Drawing.Point(32, 131);
-            this.TB_ClientName.Name = "TB_ClientName";
-            this.TB_ClientName.Size = new System.Drawing.Size(315, 27);
-            this.TB_ClientName.TabIndex = 34;
+            this.Btn_ClearCamps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ClearCamps.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ClearCamps.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_ClearCamps.BorderRadius = 10;
+            this.Btn_ClearCamps.BorderSize = 0;
+            this.Btn_ClearCamps.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_ClearCamps.FlatAppearance.BorderSize = 0;
+            this.Btn_ClearCamps.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_ClearCamps.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_ClearCamps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_ClearCamps.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ClearCamps.ForeColor = System.Drawing.Color.White;
+            this.Btn_ClearCamps.Location = new System.Drawing.Point(818, 189);
+            this.Btn_ClearCamps.Name = "Btn_ClearCamps";
+            this.Btn_ClearCamps.Size = new System.Drawing.Size(161, 37);
+            this.Btn_ClearCamps.TabIndex = 6;
+            this.Btn_ClearCamps.Text = "Limpar campos";
+            this.Btn_ClearCamps.TextColor = System.Drawing.Color.White;
+            this.Btn_ClearCamps.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // Tb_ServicePrice
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 19);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Nome:";
+            this.Tb_ServicePrice.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ServicePrice.Location = new System.Drawing.Point(32, 196);
+            this.Tb_ServicePrice.Name = "Tb_ServicePrice";
+            this.Tb_ServicePrice.Size = new System.Drawing.Size(280, 27);
+            this.Tb_ServicePrice.TabIndex = 3;
+            this.Tb_ServicePrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // Tb_ServiceCode
             // 
-            this.textBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.textBox4.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(373, 64);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(606, 94);
-            this.textBox4.TabIndex = 34;
+            this.Tb_ServiceCode.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ServiceCode.Location = new System.Drawing.Point(32, 64);
+            this.Tb_ServiceCode.Mask = "GP-S000";
+            this.Tb_ServiceCode.Name = "Tb_ServiceCode";
+            this.Tb_ServiceCode.Size = new System.Drawing.Size(315, 27);
+            this.Tb_ServiceCode.TabIndex = 1;
+            // 
+            // Tb_ServiceName
+            // 
+            this.Tb_ServiceName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Tb_ServiceName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.Tb_ServiceName.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ServiceName.Location = new System.Drawing.Point(32, 131);
+            this.Tb_ServiceName.Name = "Tb_ServiceName";
+            this.Tb_ServiceName.Size = new System.Drawing.Size(315, 27);
+            this.Tb_ServiceName.TabIndex = 2;
             // 
             // label4
             // 
@@ -259,16 +297,16 @@ namespace GPSys_Desk_APP.Views
             this.label4.TabIndex = 33;
             this.label4.Text = "Descrição:";
             // 
-            // label3
+            // Tb_ServiceDescription
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(35, 176);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 19);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Preço:";
+            this.Tb_ServiceDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Tb_ServiceDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.Tb_ServiceDescription.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ServiceDescription.Location = new System.Drawing.Point(373, 64);
+            this.Tb_ServiceDescription.Multiline = true;
+            this.Tb_ServiceDescription.Name = "Tb_ServiceDescription";
+            this.Tb_ServiceDescription.Size = new System.Drawing.Size(606, 94);
+            this.Tb_ServiceDescription.TabIndex = 4;
             // 
             // label5
             // 
@@ -281,48 +319,27 @@ namespace GPSys_Desk_APP.Views
             this.label5.TabIndex = 73;
             this.label5.Text = "Mt";
             // 
-            // buttons3
+            // label2
             // 
-            this.buttons3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons3.BorderColor = System.Drawing.Color.Transparent;
-            this.buttons3.BorderRadius = 10;
-            this.buttons3.BorderSize = 0;
-            this.buttons3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttons3.FlatAppearance.BorderSize = 0;
-            this.buttons3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.buttons3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.buttons3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttons3.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttons3.ForeColor = System.Drawing.Color.White;
-            this.buttons3.Location = new System.Drawing.Point(818, 189);
-            this.buttons3.Name = "buttons3";
-            this.buttons3.Size = new System.Drawing.Size(161, 34);
-            this.buttons3.TabIndex = 78;
-            this.buttons3.Text = "Limpar campos";
-            this.buttons3.TextColor = System.Drawing.Color.White;
-            this.buttons3.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 109);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 19);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Nome:";
             // 
-            // groupBox2
+            // label3
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.buttons3);
-            this.groupBox2.Controls.Add(this.onlyInt1);
-            this.groupBox2.Controls.Add(this.maskedTextBox1);
-            this.groupBox2.Controls.Add(this.TB_ClientName);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(71, 59);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(989, 248);
-            this.groupBox2.TabIndex = 83;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Serviço";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(35, 176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 19);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Preço:";
             // 
             // ServiceUserControlForm
             // 
@@ -330,15 +347,12 @@ namespace GPSys_Desk_APP.Views
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.buttons1);
-            this.Controls.Add(this.Add_btn);
-            this.Controls.Add(this.buttons2);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.panel1);
             this.Name = "ServiceUserControlForm";
             this.Size = new System.Drawing.Size(1135, 696);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -346,21 +360,23 @@ namespace GPSys_Desk_APP.Views
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView DataGridView;
-        private Controls.Buttons buttons1;
-        private Controls.Buttons buttons2;
-        private Controls.Buttons Add_btn;
+
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Controls.OnlyInt onlyInt1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TB_ClientName;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private Controls.Buttons buttons3;
+        private System.Windows.Forms.DataGridView DataGridView;
+        private Controls.Buttons Btn_DeleteService;
+        private Controls.Buttons Btn_AddSaveService;
+        private Controls.Buttons Btn_UpdateService;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label1;
+        private Controls.Buttons Btn_ClearCamps;
+        private Controls.OnlyInt Tb_ServicePrice;
+        private System.Windows.Forms.MaskedTextBox Tb_ServiceCode;
+        private System.Windows.Forms.TextBox Tb_ServiceName;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Tb_ServiceDescription;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
