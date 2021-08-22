@@ -69,31 +69,33 @@ namespace GPSys_Desk_APP.Views
             this.Cb_Service = new System.Windows.Forms.ComboBox();
             this.classEntidadeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.classNegocioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Lbl_OrderNumber = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Dud_Quantitity = new System.Windows.Forms.DomainUpDown();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Tb_ClientNUIT = new System.Windows.Forms.MaskedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Cb_ClientCity = new System.Windows.Forms.ComboBox();
+            this.Tb_ClientEmail = new System.Windows.Forms.TextBox();
+            this.Tb_ClientAddress = new System.Windows.Forms.TextBox();
+            this.Tb_ClientName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Tb_ClientContactNumber = new System.Windows.Forms.MaskedTextBox();
             this.Btn_CompleteOrder = new GPSys_Desk_APP.Controls.Buttons();
             this.Btn_ClearWishList = new GPSys_Desk_APP.Controls.Buttons();
             this.Btn_RemoveFromWishList = new GPSys_Desk_APP.Controls.Buttons();
             this.Btn_CancelOrder = new GPSys_Desk_APP.Controls.Buttons();
             this.Btn_UpdateWishList = new GPSys_Desk_APP.Controls.Buttons();
-            this.Tb_ClientContactNumber = new System.Windows.Forms.MaskedTextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Lbl_ClientNumber = new System.Windows.Forms.Label();
-            this.Tb_ClientName = new System.Windows.Forms.TextBox();
-            this.Tb_ClientAddress = new System.Windows.Forms.TextBox();
-            this.Tb_ClientEmail = new System.Windows.Forms.TextBox();
-            this.Cb_ClientCity = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.Tb_ClientNUIT = new System.Windows.Forms.MaskedTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Tb_ID = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
@@ -330,9 +332,9 @@ namespace GPSys_Desk_APP.Views
             this.label20.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(33, 254);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(136, 19);
+            this.label20.Size = new System.Drawing.Size(50, 19);
             this.label20.TabIndex = 68;
-            this.label20.Text = "Valor por pagar:";
+            this.label20.Text = "Total:";
             // 
             // label29
             // 
@@ -360,6 +362,8 @@ namespace GPSys_Desk_APP.Views
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.Tb_UnitPrice);
             this.groupBox2.Controls.Add(this.Tb_Note);
@@ -370,11 +374,11 @@ namespace GPSys_Desk_APP.Views
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.Btn_AddSave);
+            this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.Cb_Service);
-            this.groupBox2.Controls.Add(this.Lbl_OrderNumber);
-            this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.panel4);
             this.groupBox2.Controls.Add(this.Dud_Quantitity);
             this.groupBox2.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -527,29 +531,6 @@ namespace GPSys_Desk_APP.Views
             this.Cb_Service.Size = new System.Drawing.Size(282, 27);
             this.Cb_Service.TabIndex = 37;
             // 
-            // Lbl_OrderNumber
-            // 
-            this.Lbl_OrderNumber.AutoSize = true;
-            this.Lbl_OrderNumber.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_OrderNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_OrderNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Lbl_OrderNumber.Location = new System.Drawing.Point(681, 34);
-            this.Lbl_OrderNumber.Name = "Lbl_OrderNumber";
-            this.Lbl_OrderNumber.Size = new System.Drawing.Size(54, 23);
-            this.Lbl_OrderNumber.TabIndex = 39;
-            this.Lbl_OrderNumber.Text = "1001";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(591, 34);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(91, 23);
-            this.label19.TabIndex = 38;
-            this.label19.Text = "Número:";
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gray;
@@ -566,6 +547,182 @@ namespace GPSys_Desk_APP.Views
             this.Dud_Quantitity.Size = new System.Drawing.Size(135, 27);
             this.Dud_Quantitity.TabIndex = 38;
             this.Dud_Quantitity.Text = "1";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.Tb_ID);
+            this.groupBox1.Controls.Add(this.Tb_ClientNUIT);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.Cb_ClientCity);
+            this.groupBox1.Controls.Add(this.Tb_ClientEmail);
+            this.groupBox1.Controls.Add(this.Tb_ClientAddress);
+            this.groupBox1.Controls.Add(this.Tb_ClientName);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.panel5);
+            this.groupBox1.Controls.Add(this.Tb_ClientContactNumber);
+            this.groupBox1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(30, 25);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(775, 244);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cliente";
+            // 
+            // Tb_ClientNUIT
+            // 
+            this.Tb_ClientNUIT.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientNUIT.Location = new System.Drawing.Point(281, 123);
+            this.Tb_ClientNUIT.Mask = "000 000 000";
+            this.Tb_ClientNUIT.Name = "Tb_ClientNUIT";
+            this.Tb_ClientNUIT.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientNUIT.TabIndex = 30;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(33, 168);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 19);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Contacto:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 19);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Nome:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(284, 101);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 19);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "NUIT:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(534, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 19);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Cidade:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(284, 168);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 19);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "E-mail:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(534, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 19);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "Endereço:";
+            // 
+            // Cb_ClientCity
+            // 
+            this.Cb_ClientCity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Cb_ClientCity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.Cb_ClientCity.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cb_ClientCity.FormattingEnabled = true;
+            this.Cb_ClientCity.Items.AddRange(new object[] {
+            "Beira - Sofala",
+            "Chimoio - Manica",
+            "Dondo - Sofala",
+            "Imhambane - Imhambane",
+            "Manica - Manica",
+            "Maputo - Maputo",
+            "Matola - Maputo",
+            "Moatize - Tete",
+            "Mocuba - Zambezia",
+            "Nacala - Nampula",
+            "Nampula - Nampula",
+            "Pemba - Cabo Delgado",
+            "Quelimane - Zambezia",
+            "Tete - Tete",
+            "Xai - Xai - Gaza"});
+            this.Cb_ClientCity.Location = new System.Drawing.Point(531, 190);
+            this.Cb_ClientCity.Name = "Cb_ClientCity";
+            this.Cb_ClientCity.Size = new System.Drawing.Size(230, 27);
+            this.Cb_ClientCity.TabIndex = 33;
+            // 
+            // Tb_ClientEmail
+            // 
+            this.Tb_ClientEmail.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientEmail.Location = new System.Drawing.Point(281, 190);
+            this.Tb_ClientEmail.Name = "Tb_ClientEmail";
+            this.Tb_ClientEmail.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientEmail.TabIndex = 31;
+            // 
+            // Tb_ClientAddress
+            // 
+            this.Tb_ClientAddress.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientAddress.Location = new System.Drawing.Point(531, 123);
+            this.Tb_ClientAddress.Name = "Tb_ClientAddress";
+            this.Tb_ClientAddress.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientAddress.TabIndex = 32;
+            // 
+            // Tb_ClientName
+            // 
+            this.Tb_ClientName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.Tb_ClientName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.Tb_ClientName.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientName.Location = new System.Drawing.Point(30, 123);
+            this.Tb_ClientName.Name = "Tb_ClientName";
+            this.Tb_ClientName.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientName.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(579, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Id Cliente:";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Location = new System.Drawing.Point(4, 61);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(767, 2);
+            this.panel5.TabIndex = 35;
+            // 
+            // Tb_ClientContactNumber
+            // 
+            this.Tb_ClientContactNumber.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ClientContactNumber.Location = new System.Drawing.Point(30, 190);
+            this.Tb_ClientContactNumber.Mask = "(+258) 00 000 0000";
+            this.Tb_ClientContactNumber.Name = "Tb_ClientContactNumber";
+            this.Tb_ClientContactNumber.Size = new System.Drawing.Size(230, 27);
+            this.Tb_ClientContactNumber.TabIndex = 34;
             // 
             // Btn_CompleteOrder
             // 
@@ -677,193 +834,57 @@ namespace GPSys_Desk_APP.Views
             this.Btn_UpdateWishList.TextColor = System.Drawing.Color.White;
             this.Btn_UpdateWishList.UseVisualStyleBackColor = false;
             // 
-            // Tb_ClientContactNumber
+            // Tb_ID
             // 
-            this.Tb_ClientContactNumber.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_ClientContactNumber.Location = new System.Drawing.Point(531, 190);
-            this.Tb_ClientContactNumber.Mask = "(+258) 00 000 0000";
-            this.Tb_ClientContactNumber.Name = "Tb_ClientContactNumber";
-            this.Tb_ClientContactNumber.Size = new System.Drawing.Size(230, 27);
-            this.Tb_ClientContactNumber.TabIndex = 34;
+            this.Tb_ID.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_ID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Tb_ID.Location = new System.Drawing.Point(687, 28);
+            this.Tb_ID.Name = "Tb_ID";
+            this.Tb_ID.Size = new System.Drawing.Size(74, 27);
+            this.Tb_ID.TabIndex = 36;
+            this.Tb_ID.Text = "01";
             // 
-            // panel5
+            // label19
             // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Location = new System.Drawing.Point(4, 61);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(767, 2);
-            this.panel5.TabIndex = 35;
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(578, 30);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(107, 23);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "Id Pedido:";
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(593, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Número:";
+            this.textBox1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.textBox1.Location = new System.Drawing.Point(687, 28);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(74, 27);
+            this.textBox1.TabIndex = 36;
+            this.textBox1.Text = "01";
             // 
-            // Lbl_ClientNumber
+            // label21
             // 
-            this.Lbl_ClientNumber.AutoSize = true;
-            this.Lbl_ClientNumber.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_ClientNumber.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_ClientNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Lbl_ClientNumber.Location = new System.Drawing.Point(683, 34);
-            this.Lbl_ClientNumber.Name = "Lbl_ClientNumber";
-            this.Lbl_ClientNumber.Size = new System.Drawing.Size(32, 23);
-            this.Lbl_ClientNumber.TabIndex = 1;
-            this.Lbl_ClientNumber.Text = "01";
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Gotham", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(352, 30);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(106, 23);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "Id Ordem:";
             // 
-            // Tb_ClientName
+            // textBox2
             // 
-            this.Tb_ClientName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.Tb_ClientName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
-            this.Tb_ClientName.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_ClientName.Location = new System.Drawing.Point(30, 123);
-            this.Tb_ClientName.Name = "Tb_ClientName";
-            this.Tb_ClientName.Size = new System.Drawing.Size(230, 27);
-            this.Tb_ClientName.TabIndex = 29;
-            // 
-            // Tb_ClientAddress
-            // 
-            this.Tb_ClientAddress.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_ClientAddress.Location = new System.Drawing.Point(30, 190);
-            this.Tb_ClientAddress.Name = "Tb_ClientAddress";
-            this.Tb_ClientAddress.Size = new System.Drawing.Size(230, 27);
-            this.Tb_ClientAddress.TabIndex = 32;
-            // 
-            // Tb_ClientEmail
-            // 
-            this.Tb_ClientEmail.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_ClientEmail.Location = new System.Drawing.Point(531, 123);
-            this.Tb_ClientEmail.Name = "Tb_ClientEmail";
-            this.Tb_ClientEmail.Size = new System.Drawing.Size(230, 27);
-            this.Tb_ClientEmail.TabIndex = 31;
-            // 
-            // Cb_ClientCity
-            // 
-            this.Cb_ClientCity.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.Cb_ClientCity.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.Cb_ClientCity.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cb_ClientCity.FormattingEnabled = true;
-            this.Cb_ClientCity.Items.AddRange(new object[] {
-            "Beira - Sofala",
-            "Chimoio - Manica",
-            "Dondo - Sofala",
-            "Imhambane - Imhambane",
-            "Manica - Manica",
-            "Maputo - Maputo",
-            "Matola - Maputo",
-            "Moatize - Tete",
-            "Mocuba - Zambezia",
-            "Nacala - Nampula",
-            "Nampula - Nampula",
-            "Pemba - Cabo Delgado",
-            "Quelimane - Zambezia",
-            "Tete - Tete",
-            "Xai - Xai - Gaza"});
-            this.Cb_ClientCity.Location = new System.Drawing.Point(281, 190);
-            this.Cb_ClientCity.Name = "Cb_ClientCity";
-            this.Cb_ClientCity.Size = new System.Drawing.Size(230, 27);
-            this.Cb_ClientCity.TabIndex = 33;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(33, 168);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 19);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Endereço:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(534, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 19);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "E-mail:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(284, 168);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 19);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Cidade:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(284, 101);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 19);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "NUIT:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 19);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "Nome:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(534, 168);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 19);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Contacto:";
-            // 
-            // Tb_ClientNUIT
-            // 
-            this.Tb_ClientNUIT.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_ClientNUIT.Location = new System.Drawing.Point(281, 123);
-            this.Tb_ClientNUIT.Mask = "000 000 000";
-            this.Tb_ClientNUIT.Name = "Tb_ClientNUIT";
-            this.Tb_ClientNUIT.Size = new System.Drawing.Size(230, 27);
-            this.Tb_ClientNUIT.TabIndex = 30;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.Tb_ClientNUIT);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.Cb_ClientCity);
-            this.groupBox1.Controls.Add(this.Tb_ClientEmail);
-            this.groupBox1.Controls.Add(this.Tb_ClientAddress);
-            this.groupBox1.Controls.Add(this.Tb_ClientName);
-            this.groupBox1.Controls.Add(this.Lbl_ClientNumber);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.panel5);
-            this.groupBox1.Controls.Add(this.Tb_ClientContactNumber);
-            this.groupBox1.Font = new System.Drawing.Font("Gotham", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(30, 25);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(775, 244);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Cliente";
+            this.textBox2.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.textBox2.Location = new System.Drawing.Point(460, 28);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(74, 27);
+            this.textBox2.TabIndex = 36;
             // 
             // NewOrderForm
             // 
@@ -914,8 +935,6 @@ namespace GPSys_Desk_APP.Views
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label Lbl_OrderNumber;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel4;
         private Controls.Buttons Btn_UpdateWishList;
         private Controls.OnlyInt Tb_Discount;
@@ -952,9 +971,13 @@ namespace GPSys_Desk_APP.Views
         private System.Windows.Forms.TextBox Tb_ClientEmail;
         private System.Windows.Forms.TextBox Tb_ClientAddress;
         private System.Windows.Forms.TextBox Tb_ClientName;
-        private System.Windows.Forms.Label Lbl_ClientNumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.MaskedTextBox Tb_ClientContactNumber;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox Tb_ID;
     }
 }

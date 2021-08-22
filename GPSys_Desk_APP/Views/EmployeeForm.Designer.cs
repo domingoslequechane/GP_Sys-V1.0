@@ -61,10 +61,10 @@ namespace GPSys_Desk_APP.Views
             this.Tb_EmployeeNaturalness = new System.Windows.Forms.TextBox();
             this.Dt_EmployeeBirthDayDate = new System.Windows.Forms.DateTimePicker();
             this.Tb_EmployeeICN = new System.Windows.Forms.TextBox();
+            this.Tb_EmployeeCod = new System.Windows.Forms.MaskedTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Tb_EmployeeCod = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,13 +83,14 @@ namespace GPSys_Desk_APP.Views
             this.buttons1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttons1.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttons1.ForeColor = System.Drawing.Color.White;
-            this.buttons1.Location = new System.Drawing.Point(562, 692);
+            this.buttons1.Location = new System.Drawing.Point(562, 697);
             this.buttons1.Name = "buttons1";
             this.buttons1.Size = new System.Drawing.Size(125, 35);
             this.buttons1.TabIndex = 36;
             this.buttons1.Text = "Continuar";
             this.buttons1.TextColor = System.Drawing.Color.White;
             this.buttons1.UseVisualStyleBackColor = false;
+            this.buttons1.Click += new System.EventHandler(this.buttons1_Click);
             // 
             // panel6
             // 
@@ -155,9 +156,9 @@ namespace GPSys_Desk_APP.Views
             this.label8.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(343, 488);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(190, 19);
+            this.label8.Size = new System.Drawing.Size(96, 19);
             this.label8.TabIndex = 38;
-            this.label8.Text = "Contacto (Alternativo):";
+            this.label8.Text = "Contacto 1:";
             // 
             // label11
             // 
@@ -165,9 +166,9 @@ namespace GPSys_Desk_APP.Views
             this.label11.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(33, 488);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(184, 19);
+            this.label11.Size = new System.Drawing.Size(108, 19);
             this.label11.TabIndex = 38;
-            this.label11.Text = "Contacto (Principal): *";
+            this.label11.Text = "Contacto 1: *";
             // 
             // label12
             // 
@@ -195,9 +196,9 @@ namespace GPSys_Desk_APP.Views
             this.label15.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(343, 420);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 19);
+            this.label15.Size = new System.Drawing.Size(84, 19);
             this.label15.TabIndex = 42;
-            this.label15.Text = "Endereço: *";
+            this.label15.Text = "Morada: *";
             // 
             // Tb_EmployeeEmail
             // 
@@ -405,6 +406,18 @@ namespace GPSys_Desk_APP.Views
             this.Tb_EmployeeICN.Size = new System.Drawing.Size(287, 27);
             this.Tb_EmployeeICN.TabIndex = 33;
             // 
+            // Tb_EmployeeCod
+            // 
+            this.Tb_EmployeeCod.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_EmployeeCod.Location = new System.Drawing.Point(30, 172);
+            this.Tb_EmployeeCod.Mask = "7180-6700";
+            this.Tb_EmployeeCod.Name = "Tb_EmployeeCod";
+            this.Tb_EmployeeCod.ReadOnly = true;
+            this.Tb_EmployeeCod.Size = new System.Drawing.Size(127, 27);
+            this.Tb_EmployeeCod.TabIndex = 32;
+            this.Tb_EmployeeCod.TabStop = false;
+            this.Tb_EmployeeCod.Text = "0";
+            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
@@ -424,31 +437,19 @@ namespace GPSys_Desk_APP.Views
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 727);
+            this.panel3.Location = new System.Drawing.Point(0, 732);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(699, 30);
+            this.panel3.Size = new System.Drawing.Size(699, 34);
             this.panel3.TabIndex = 48;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 757);
+            this.panel2.Location = new System.Drawing.Point(0, 766);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(699, 10);
             this.panel2.TabIndex = 47;
-            // 
-            // Tb_EmployeeCod
-            // 
-            this.Tb_EmployeeCod.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_EmployeeCod.Location = new System.Drawing.Point(30, 172);
-            this.Tb_EmployeeCod.Mask = "7180-6700";
-            this.Tb_EmployeeCod.Name = "Tb_EmployeeCod";
-            this.Tb_EmployeeCod.ReadOnly = true;
-            this.Tb_EmployeeCod.Size = new System.Drawing.Size(127, 27);
-            this.Tb_EmployeeCod.TabIndex = 32;
-            this.Tb_EmployeeCod.TabStop = false;
-            this.Tb_EmployeeCod.Text = "0";
             // 
             // EmployeeForm
             // 
@@ -459,6 +460,9 @@ namespace GPSys_Desk_APP.Views
             this.ClientSize = new System.Drawing.Size(716, 643);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(732, 682);
+            this.MinimumSize = new System.Drawing.Size(732, 682);
             this.Name = "EmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conta Admin";

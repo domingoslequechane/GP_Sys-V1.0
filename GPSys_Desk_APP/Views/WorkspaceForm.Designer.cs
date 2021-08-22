@@ -33,7 +33,6 @@ namespace GPSys_Desk_APP.Views
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Btn_DBSetting = new GPSys_Desk_APP.Controls.Buttons();
             this.Btn_UserInfo = new GPSys_Desk_APP.Controls.Buttons();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Btn_LogOut = new GPSys_Desk_APP.Controls.Buttons();
@@ -76,7 +75,6 @@ namespace GPSys_Desk_APP.Views
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.Btn_DBSetting);
             this.panel1.Controls.Add(this.Btn_UserInfo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -102,32 +100,6 @@ namespace GPSys_Desk_APP.Views
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // Btn_DBSetting
-            // 
-            this.Btn_DBSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_DBSetting.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_DBSetting.BackgroundColor = System.Drawing.Color.Transparent;
-            this.Btn_DBSetting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_DBSetting.BackgroundImage")));
-            this.Btn_DBSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_DBSetting.BorderColor = System.Drawing.Color.Transparent;
-            this.Btn_DBSetting.BorderRadius = 35;
-            this.Btn_DBSetting.BorderSize = 0;
-            this.Btn_DBSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_DBSetting.FlatAppearance.BorderSize = 0;
-            this.Btn_DBSetting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(74)))), ((int)(((byte)(77)))));
-            this.Btn_DBSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Btn_DBSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_DBSetting.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_DBSetting.ForeColor = System.Drawing.Color.White;
-            this.Btn_DBSetting.Location = new System.Drawing.Point(1271, 9);
-            this.Btn_DBSetting.Name = "Btn_DBSetting";
-            this.Btn_DBSetting.Size = new System.Drawing.Size(35, 35);
-            this.Btn_DBSetting.TabIndex = 10;
-            this.Btn_DBSetting.TabStop = false;
-            this.Btn_DBSetting.TextColor = System.Drawing.Color.White;
-            this.Btn_DBSetting.UseVisualStyleBackColor = false;
-            this.Btn_DBSetting.Click += new System.EventHandler(this.Btn_DBSetting_Click);
             // 
             // Btn_UserInfo
             // 
@@ -610,7 +582,6 @@ namespace GPSys_Desk_APP.Views
 
         private OrderUserControlForm orderUserControlForm3;
         private ClientsUserControlForm clientsUserControlForm3;
-        private Controls.Buttons Btn_DBSetting;
         private System.Windows.Forms.Panel panel4;
         private Controls.Buttons Btn_LogOut;
         private Controls.Buttons Btn_Home;

@@ -16,7 +16,7 @@ namespace GPSys_Desk_APP
 {
     public partial class ProgressiveForm : Form
     {
-        Thread goToLogin;
+        Thread goToLogin, goToDBConnectionSettings;
         public ProgressiveForm()
         {
             InitializeComponent();
@@ -51,6 +51,26 @@ namespace GPSys_Desk_APP
                 label_Status.Text = string.Format("A carregar...{0}%", report.PercentComplete);
             };
 
+            // Criação da Base de dados
+            try
+            {
+                LocalDB.CreateSQLiteDirAndDB();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+
+            // Criação da tabela
+            try
+            {
+                LocalDB.CreateSQLiteTable();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+
             await ProcessData(list, progress);
             label_Status.Text = "Tudo pronto!";
         }
@@ -62,13 +82,34 @@ namespace GPSys_Desk_APP
             if(progress_Panel.Width >= 800)
             {
                 Timer1.Stop();
-                this.Close();
-                goToLogin = new Thread(ControlAcessForm);
-                goToLogin.SetApartmentState(ApartmentState.STA);
-                goToLogin.Start();
+
+                int RowsLine = LocalDB.SizeRowsDB();
+
+                if (RowsLine == 0)
+                {
+                    goToLogin = new Thread(ControlAcessForm);
+                    goToLogin.SetApartmentState(ApartmentState.STA);
+                    goToLogin.Start();
+
+                    this.Close();
+                }
+                else
+                {
+                    goToDBConnectionSettings = new Thread(ToDBConnectionSettingsForm);
+                    goToDBConnectionSettings.SetApartmentState(ApartmentState.STA);
+                    goToDBConnectionSettings.Start();
+
+                    this.Close();
+                }
             }
         }
+
         private void ControlAcessForm(object obj)
+        {
+            Application.Run(new DBConnectionSettingForm());
+        }
+
+        private void ToDBConnectionSettingsForm(object obj)
         {
             Application.Run(new LoginForm());
         }

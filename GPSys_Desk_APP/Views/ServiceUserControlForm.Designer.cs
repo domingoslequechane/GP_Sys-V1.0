@@ -38,11 +38,11 @@ namespace GPSys_Desk_APP.Views
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DataGridView = new System.Windows.Forms.DataGridView();
             this.Btn_DeleteService = new GPSys_Desk_APP.Controls.Buttons();
-            this.Btn_AddSaveService = new GPSys_Desk_APP.Controls.Buttons();
             this.Btn_UpdateService = new GPSys_Desk_APP.Controls.Buttons();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Btn_ClearCamps = new GPSys_Desk_APP.Controls.Buttons();
+            this.Btn_AddSaveService = new GPSys_Desk_APP.Controls.Buttons();
             this.Tb_ServicePrice = new GPSys_Desk_APP.Controls.OnlyInt();
             this.Tb_ServiceCode = new System.Windows.Forms.MaskedTextBox();
             this.Tb_ServiceName = new System.Windows.Forms.TextBox();
@@ -157,29 +157,6 @@ namespace GPSys_Desk_APP.Views
             this.Btn_DeleteService.UseVisualStyleBackColor = false;
             this.Btn_DeleteService.Click += new System.EventHandler(this.Btn_DeleteService_Click);
             // 
-            // Btn_AddSaveService
-            // 
-            this.Btn_AddSaveService.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Btn_AddSaveService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Btn_AddSaveService.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Btn_AddSaveService.BorderColor = System.Drawing.Color.Transparent;
-            this.Btn_AddSaveService.BorderRadius = 10;
-            this.Btn_AddSaveService.BorderSize = 0;
-            this.Btn_AddSaveService.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Btn_AddSaveService.FlatAppearance.BorderSize = 0;
-            this.Btn_AddSaveService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
-            this.Btn_AddSaveService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
-            this.Btn_AddSaveService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_AddSaveService.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_AddSaveService.ForeColor = System.Drawing.Color.White;
-            this.Btn_AddSaveService.Location = new System.Drawing.Point(641, 189);
-            this.Btn_AddSaveService.Name = "Btn_AddSaveService";
-            this.Btn_AddSaveService.Size = new System.Drawing.Size(161, 37);
-            this.Btn_AddSaveService.TabIndex = 5;
-            this.Btn_AddSaveService.Text = "Adicionar / Salvar";
-            this.Btn_AddSaveService.TextColor = System.Drawing.Color.White;
-            this.Btn_AddSaveService.UseVisualStyleBackColor = false;
-            // 
             // Btn_UpdateService
             // 
             this.Btn_UpdateService.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -250,13 +227,36 @@ namespace GPSys_Desk_APP.Views
             this.Btn_ClearCamps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_ClearCamps.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ClearCamps.ForeColor = System.Drawing.Color.White;
-            this.Btn_ClearCamps.Location = new System.Drawing.Point(818, 189);
+            this.Btn_ClearCamps.Location = new System.Drawing.Point(804, 189);
             this.Btn_ClearCamps.Name = "Btn_ClearCamps";
             this.Btn_ClearCamps.Size = new System.Drawing.Size(161, 37);
             this.Btn_ClearCamps.TabIndex = 6;
             this.Btn_ClearCamps.Text = "Limpar campos";
             this.Btn_ClearCamps.TextColor = System.Drawing.Color.White;
             this.Btn_ClearCamps.UseVisualStyleBackColor = false;
+            // 
+            // Btn_AddSaveService
+            // 
+            this.Btn_AddSaveService.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_AddSaveService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSaveService.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSaveService.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_AddSaveService.BorderRadius = 10;
+            this.Btn_AddSaveService.BorderSize = 0;
+            this.Btn_AddSaveService.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn_AddSaveService.FlatAppearance.BorderSize = 0;
+            this.Btn_AddSaveService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick;
+            this.Btn_AddSaveService.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(51)))), ((int)(((byte)(54)))));
+            this.Btn_AddSaveService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_AddSaveService.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_AddSaveService.ForeColor = System.Drawing.Color.White;
+            this.Btn_AddSaveService.Location = new System.Drawing.Point(577, 189);
+            this.Btn_AddSaveService.Name = "Btn_AddSaveService";
+            this.Btn_AddSaveService.Size = new System.Drawing.Size(210, 37);
+            this.Btn_AddSaveService.TabIndex = 5;
+            this.Btn_AddSaveService.Text = "Adicionar / Actualizar";
+            this.Btn_AddSaveService.TextColor = System.Drawing.Color.White;
+            this.Btn_AddSaveService.UseVisualStyleBackColor = false;
             // 
             // Tb_ServicePrice
             // 
@@ -271,10 +271,11 @@ namespace GPSys_Desk_APP.Views
             // 
             this.Tb_ServiceCode.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_ServiceCode.Location = new System.Drawing.Point(32, 64);
-            this.Tb_ServiceCode.Mask = "GP-S000";
+            this.Tb_ServiceCode.Mask = "71808200";
             this.Tb_ServiceCode.Name = "Tb_ServiceCode";
             this.Tb_ServiceCode.Size = new System.Drawing.Size(315, 27);
             this.Tb_ServiceCode.TabIndex = 1;
+            this.Tb_ServiceCode.Text = "0";
             // 
             // Tb_ServiceName
             // 
@@ -305,7 +306,7 @@ namespace GPSys_Desk_APP.Views
             this.Tb_ServiceDescription.Location = new System.Drawing.Point(373, 64);
             this.Tb_ServiceDescription.Multiline = true;
             this.Tb_ServiceDescription.Name = "Tb_ServiceDescription";
-            this.Tb_ServiceDescription.Size = new System.Drawing.Size(606, 94);
+            this.Tb_ServiceDescription.Size = new System.Drawing.Size(592, 94);
             this.Tb_ServiceDescription.TabIndex = 4;
             // 
             // label5
